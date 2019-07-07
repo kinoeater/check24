@@ -18,6 +18,11 @@ public class Home_Page extends BasePage {
  @FindBy(how = How.LINK_TEXT, using = "Reise")
  public WebElement travel;
 
+ @FindBy(how = How.XPATH, using = "//font[contains(text(),'sign up and secure 50 welcome points »')]")
+ public WebElement signup_secure;
+ 
+ @FindBy(how = How.ID, using = " termsaccepted")
+ public WebElement signup_checkbox;
  
  public Home_Page() throws IOException {
   super();

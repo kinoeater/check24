@@ -26,9 +26,6 @@ public class DriverFactory {
 	public static Login_Page loginPage;
 	public static Search_Page searchPage;
 	public static Travel_Page travelPage;
-	
-	
-	
 
 	
 	public WebDriver getDriver() {
