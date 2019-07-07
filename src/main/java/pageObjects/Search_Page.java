@@ -15,6 +15,7 @@ public class Search_Page extends BasePage {
 	}
 	
 	public Search_Page clickOnProceedButton_Popup() throws IOException, InterruptedException {
+		
 		waitAndClickElement(button_Proceed_Popup);
 		return new Search_Page();
 	}

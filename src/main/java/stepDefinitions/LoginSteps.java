@@ -1,13 +1,7 @@
 package stepDefinitions;
 
-import java.nio.charset.Charset;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
-import java.util.UUID;
-
-import org.openqa.selenium.Keys;
 import org.testng.Assert;
 
 import cucumber.api.DataTable;
@@ -21,6 +15,7 @@ public class LoginSteps extends DriverFactory {
 	
 	    @Given("^User is on login page$")
 	    public void user_is_on_login_page() throws Throwable {
+	    	
 	    	loginPage.WaitUntilWebElementIsVisible(loginPage.loginEmailArea);
 	    }
 	 
@@ -28,6 +23,7 @@ public class LoginSteps extends DriverFactory {
 	    public void user_navigates_to_login_page() throws Throwable {
 
 			landingPage.clickOnAnmeldenButton();
+			
 	    }
 	    
 	    @Then("^User can see login email area$")
@@ -51,6 +47,7 @@ public class LoginSteps extends DriverFactory {
 	    
 	    @Then("^User should be notified with \"([^\"]*)\" on login email-pwd error$")
 	    public void user_should_be_notified_with_something_on_login_emailpwd_error(String strArg1) throws Throwable {
+	    	
 	    	loginPage.WaitUntilWebElementIsVisible(loginPage.invalid_email_pwd_error);
 	    	System.out.println("CHECK THISSSSSS" + loginPage.invalid_email_pwd_error.getText());
 	    	Assert.assertEquals(loginPage.invalid_email_pwd_error.getText(),strArg1);
@@ -63,18 +60,22 @@ public class LoginSteps extends DriverFactory {
 	    	loginPage.WaitUntilWebElementIsVisible(loginPage.invalid_email_pwd_error);
 	    	System.out.println(loginPage.invalid_email_pwd_error.getText());
 	    	Assert.assertEquals(loginPage.invalid_email_pwd_error.getText(),strArg1);
+	    	
 	    }
 	    
 	    @Then("^User should be notified with \"([^\"]*)\" on login email error$")
 	    public void user_should_be_notified_with_something_on_login_email_error(String strArg1) throws Throwable {
+	    	
 	    	loginPage.WaitUntilWebElementIsVisible(loginPage.empty_email_error);
 	    	System.out.println(loginPage.empty_email_error.getText());
 	    	Assert.assertEquals(loginPage.empty_email_error.getText(),strArg1);
+	    	
 	    }
 	    
 	    
 	    @Then("^User should be notified with \"([^\"]*)\" on empty password error$")
 	    public void user_should_be_notified_with_something_on_empty_password_error(String strArg1) throws Throwable {
+	    	
 	    	loginPage.WaitUntilWebElementIsVisible(loginPage.empty_pwd_error);
 	    	System.out.println(loginPage.empty_pwd_error.getText());
 	    	Assert.assertEquals(loginPage.empty_pwd_error.getText(),strArg1);
@@ -84,6 +85,7 @@ public class LoginSteps extends DriverFactory {
 	    public void user_clicks_on_the_login_button() throws Throwable {
 	    	
 	    	loginPage.waitAndClickElement(loginPage.login_Button);
+	    	
 	    }
 	    
 
@@ -91,6 +93,7 @@ public class LoginSteps extends DriverFactory {
 	    public void user_should_land_on_home_page_after_login() throws Throwable {
 	        
 	    	homePage.verify_Meine_Benachrichtigunge_message();
+	    	
 	    }
 
 

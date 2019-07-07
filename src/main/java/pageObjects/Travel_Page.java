@@ -1,9 +1,6 @@
 package pageObjects;
 
 import java.io.IOException;
-import java.util.List;
-import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -41,14 +38,10 @@ public class Travel_Page extends BasePage{
 	
 	@FindBy(how = How.LINK_TEXT, using = "Reise")
     public WebElement travel;
-	
-
 
 	@FindBy(how = How.XPATH, using = "//label[contains(text(),'Flug & Hotel')]")
     public WebElement flugHotel;
-	
-	
-	
+		
 	@FindBy(how = How.XPATH, using = "//*[@id=\"searchform-travelsearch\"]/div[2]/div[2]/span[1]")                                
     public WebElement travel_number;
 	
@@ -58,14 +51,15 @@ public class Travel_Page extends BasePage{
 	
 	
 	public Travel_Page clickFindTripButton() throws Exception {
-    	waitAndClickElement(find_button);
-    	
+		
+    	waitAndClickElement(find_button);    	
 		return new Travel_Page();
+		
 	}
 	
 	public Travel_Page enterReturn(String return_time) throws Exception {
+		
 		return_input.sendKeys(return_time);
-
 		return new Travel_Page();
 	}
 	
@@ -73,7 +67,6 @@ public class Travel_Page extends BasePage{
 	public Travel_Page enterArrival(String arrival_time) throws Exception {
 		
 		arrival_input.sendKeys(arrival_time);
-
 		return new Travel_Page();
 	}
 	
@@ -81,16 +74,12 @@ public class Travel_Page extends BasePage{
 	public Travel_Page enterAirport(String departure) throws Exception {
 
 		airport.sendKeys(departure,Keys.ENTER);
-
 		return new Travel_Page();
 	}
 	
 	public Travel_Page enterDestination(String travel_destination) throws Exception {
 		
 		destination.sendKeys(travel_destination,Keys.ENTER);
-  
-  
-
 		return new Travel_Page();
 	}
 	
@@ -98,17 +87,17 @@ public class Travel_Page extends BasePage{
      	
 		waitAndClickElement(travelPage.travel_duration);
     	sendKeysToWebElement(travelPage.travel_duration_input, duration);
-    	travel_duration_input.sendKeys(Keys.ENTER);
-		
+    	travel_duration_input.sendKeys(Keys.ENTER);		
     	return new Travel_Page();
+    	
 	}
 	
 public Travel_Page enterTravelOptions() throws Exception {
      	
 		waitAndClickElement(travelPage.traveler_options);
-		waitAndClickElement(travelPage.traveler_options_one_adault);
-    			
+		waitAndClickElement(travelPage.traveler_options_one_adault);   			
     	return new Travel_Page();
+    	
 	}
 	
 	
@@ -121,7 +110,4 @@ public Travel_Page enterTravelOptions() throws Exception {
 
 	
 
-	
-	
-
-}
+    }

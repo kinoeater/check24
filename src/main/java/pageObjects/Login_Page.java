@@ -33,30 +33,31 @@ public class Login_Page extends BasePage {
 	public Login_Page entersEmail (String email) throws Exception {
 		
 		sendKeysToWebElement(loginEmailArea, email);
-		
 		return new Login_Page();
+		
 	}
 
 	
 	  public Login_Page entersPassword (String password) throws Exception {
 			
 	   sendKeysToWebElement(loginPasswordArea, password);
-			
 	   return new Login_Page();
+	   
 	}
 	  
 	   public Login_Page clicks_Login () throws Exception {
 			   
 	   waitAndClickElement(login_Button);
 	   return new Login_Page();
+	   
 	}
 	   
 	   public Login_Page check_visibility_of_email_area () throws Exception {
 			
 	   WaitUntilWebElementIsVisible(loginEmailArea);
-			
-      return new Login_Page();
-		}
+	   return new Login_Page();
+		
+	}
 	  
 	  
 }

@@ -2,7 +2,6 @@ package pageObjects;
 
 import java.io.IOException;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -40,36 +39,34 @@ public class Registration_Page extends BasePage {
 			
 	public Registration_Page entersEmail (String email) throws Exception {
 		
-		sendKeysToWebElement(emailArea, email);
-		
+		sendKeysToWebElement(emailArea, email);		
 		return new Registration_Page();
 	}
 
 	
 	  public Registration_Page entersPassword (String password) throws Exception {
 			
-			sendKeysToWebElement(passwordArea, password);
-			
+			sendKeysToWebElement(passwordArea, password);			
 			return new Registration_Page();
-		}
+	}
 	
    public Registration_Page entersRepeatingPassword (String repeating_password) throws Exception {
 		
 		sendKeysToWebElement(repeatingPasswordArea, repeating_password);
-		
 		return new Registration_Page();
 	}
    
    public Registration_Page clicks_Submit () throws Exception {
 		   
 	   waitAndClickElement(submit_button);
-		return new Registration_Page();
+	   return new Registration_Page();
+		
 	}
      
    public Registration_Page check_visibility_of_email_area () throws Exception {
 		
 	   WaitUntilWebElementIsVisible(emailArea);
-		
-		return new Registration_Page();
+	   return new Registration_Page();
+	   
 	}
 }
