@@ -8,7 +8,7 @@ Feature: New user registration functionality tests
      When User navigates to registration page
      Then User can see email area
   
-  Scenario: User successfully registers to check24 web page
+  Scenario: Verify that user can successfully register with suitable credentials.
   # Used basic parameterization for password and repeated password
   # If same email is used in one of the successful registrations beforehand, system will reject it if we use it second time.
   # To avoid this, I added a few lines that creates random e-mail addresses for registration purposes
@@ -21,7 +21,7 @@ Feature: New user registration functionality tests
      Then User should close popup message
       And User should land on home page
   
-  Scenario: Invalid Registration when entering very short password
+  Scenario: Verify that user cannot register when entering very short password.
   # Again, I used random e-mail address for the sake of the test case
   
     Given User is on registiration page
@@ -31,7 +31,7 @@ Feature: New user registration functionality tests
      When User clicks on the submit button
      Then User should be notified with "Das Passwort sollte zwischen 6 und 50 Zeichen lang sein." on password error
   
-  Scenario: Invalid Registration when password and repeating password do not match
+  Scenario: Verify that user cannot register when password and repeating password do not match.
   # Random e-mail address 
   
     Given User is on registiration page
@@ -41,7 +41,7 @@ Feature: New user registration functionality tests
      When User clicks on the submit button
      Then User should be notified with "Die Passwörter stimmen nicht überein." on password error
   
-  Scenario: Invalid Registration when trying to use an invalid e-mail format
+  Scenario: Verify that user cannot register when trying to use an invalid e-mail format.
   # E-mail address without @ sign
   
     Given User is on registiration page
