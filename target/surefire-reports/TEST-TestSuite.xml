@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="429.409" tests="4" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
+    <property name="java.vm.version" value="25.211-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\musta\eclipse-workspace\ty\WebdriverUniversity\CucumberFramework"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\musta\eclipse-workspace\ty\WebdriverUniversity\CucumberFramework"/>
+    <property name="java.runtime.version" value="1.8.0_211-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\musta\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Automation\apache-maven-3.6.1\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_211\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\nodejs\;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\musta\AppData\Local\Android\Sdk\tools\bin;C:\Users\musta\AppData\Local\Android\Sdk\tools;C:\Users\musta\AppData\Local\Android\Sdk\platform-tools;C:\Automation\apache-maven-3.6.1\bin;C:\Program Files\Git\cmd;C:\Users\musta\AppData\Local\Microsoft\WindowsApps;C:\Users\musta\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Automation\apache-maven-3.6.1\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Automation\apache-maven-3.6.1\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\musta"/>
+    <property name="user.timezone" value="Asia/Istanbul"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="musta"/>
+    <property name="java.class.path" value="C:\Automation\apache-maven-3.6.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_211\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_211"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_211\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Automation\apache-maven-3.6.1\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="feature" classname="runners.MainRunner_Test" time="33.361">
+    <failure message="java.lang.AssertionError: Unable to wait and click on the WebElement, using locator: &lt;[[ChromeDriver: chrome on XP (6598307341eee66f10d1cb970408a5d5)] -&gt; xpath: //a[contains(text(),&apos;bestätigen&apos;)]]&gt;" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: java.lang.AssertionError: Unable to wait and click on the WebElement, using locator: &lt;[[ChromeDriver: chrome on XP (6598307341eee66f10d1cb970408a5d5)] -&gt; xpath: //a[contains(text(),'bestätigen')]]&gt;Caused by: java.lang.AssertionError: Unable to wait and click on the WebElement, using locator: &lt;[[ChromeDriver: chrome on XP (6598307341eee66f10d1cb970408a5d5)] -&gt; xpath: //a[contains(text(),'bestätigen')]]&gt;</failure>
+    <system-out><![CDATA[...
+... TestNG 6.9.10 by Cédric Beust (cedric@beust.com)
+...
+
+Feature: Email confirmation
+WebElement is visible using locator: <[[ChromeDriver: chrome on XP (e7a5eb2a0c52ddd17e12550de51d5bd1)] -> partial link text: Anmelden]>
+Successfully Action Moved and Clicked on the WebElement, using locator: <[[ChromeDriver: chrome on XP (e7a5eb2a0c52ddd17e12550de51d5bd1)] -> xpath: /html/body/div[2]/div/a]>
+WebElement is visible using locator: <[[ChromeDriver: chrome on XP (e7a5eb2a0c52ddd17e12550de51d5bd1)] -> id: email]>
+WebElement is visible using locator: <[[ChromeDriver: chrome on XP (e7a5eb2a0c52ddd17e12550de51d5bd1)] -> id: email]>
+e4925373-b24e-4768-b554-e12d8df4c1d8
+WebElement is visible using locator: <[[ChromeDriver: chrome on XP (e7a5eb2a0c52ddd17e12550de51d5bd1)] -> id: email]>
+Successfully Sent the following keys: 'e4925373-b24e-4768-b554-e12d8df4c1d8@gmail.com' to element: <[[ChromeDriver: chrome on XP (e7a5eb2a0c52ddd17e12550de51d5bd1)] -> id: email]>
+WebElement is visible using locator: <[[ChromeDriver: chrome on XP (e7a5eb2a0c52ddd17e12550de51d5bd1)] -> id: password]>
+Successfully Sent the following keys: '9876Strong!' to element: <[[ChromeDriver: chrome on XP (e7a5eb2a0c52ddd17e12550de51d5bd1)] -> id: password]>
+WebElement is visible using locator: <[[ChromeDriver: chrome on XP (e7a5eb2a0c52ddd17e12550de51d5bd1)] -> id: passwordrepetition]>
+Successfully Sent the following keys: '9876Strong!' to element: <[[ChromeDriver: chrome on XP (e7a5eb2a0c52ddd17e12550de51d5bd1)] -> id: passwordrepetition]>
+Successfully clicked on the WebElement: <[[ChromeDriver: chrome on XP (e7a5eb2a0c52ddd17e12550de51d5bd1)] -> name: register]>
+Successfully Action Moved and Clicked on the WebElement, using locator: <[[ChromeDriver: chrome on XP (e7a5eb2a0c52ddd17e12550de51d5bd1)] -> xpath: //*[@id="c24-dialog-points-modal"]/div/header/button]>
+WebElement is visible using locator: <[[ChromeDriver: chrome on XP (e7a5eb2a0c52ddd17e12550de51d5bd1)] -> xpath: //*[@id="c24-kb-container"]/div/div[1]/div/div/div/h1]>
+
+  #You can select a browser as chrome" or "firefox" by simply entering your choice to properties/config.properties file
+  #Then Bonigarcia’s webdriver manager will take care of the rest
+  Scenario: Verify that user can successfully register with suitable credentials. # email_validation.feature:6
+    Given User opens Check24 WebPage                                              # New_RegistrationSteps.user_opens_check24_webpage()
+    When User navigates to registration page                                      # New_RegistrationSteps.user_navigates_to_registration_page()
+    Then User can see email area                                                  # New_RegistrationSteps.user_can_see_email_area()
+    Given User is on registiration page                                           # New_RegistrationSteps.user_is_on_registiration_page()
+    And User enters a randomly generated email                                    # New_RegistrationSteps.user_enters_a_randomly_generated_email()
+    And User enters Password as "9876Strong!"                                     # New_RegistrationSteps.user_enters_password_as_something(String)
+    And User enters Repeating Password as "9876Strong!"                           # New_RegistrationSteps.user_enters_repeating_password_as_something(String)
+    And User clicks on the submit button                                          # New_RegistrationSteps.user_clicks_on_the_submit_button()
+    Then User should close popup message                                          # New_RegistrationSteps.user_should_close_popup_message()
+    And User should land on home page                                             # New_RegistrationSteps.user_should_land_on_home_page()
+WebElement is visible using locator: <[[ChromeDriver: chrome on XP (6598307341eee66f10d1cb970408a5d5)] -> id: username]>
+WebElement is visible using locator: <[[ChromeDriver: chrome on XP (6598307341eee66f10d1cb970408a5d5)] -> id: username]>
+Successfully Sent the following keys: 'check24qa' to element: <[[ChromeDriver: chrome on XP (6598307341eee66f10d1cb970408a5d5)] -> id: username]>
+WebElement is visible using locator: <[[ChromeDriver: chrome on XP (6598307341eee66f10d1cb970408a5d5)] -> id: password]>
+Successfully Sent the following keys: '&6Mu2tafa' to element: <[[ChromeDriver: chrome on XP (6598307341eee66f10d1cb970408a5d5)] -> id: password]>
+Successfully clicked on the WebElement: <[[ChromeDriver: chrome on XP (6598307341eee66f10d1cb970408a5d5)] -> id: login_btn]>
+WebElement is visible using locator: <[[ChromeDriver: chrome on XP (6598307341eee66f10d1cb970408a5d5)] -> xpath: //input[@placeholder='Search messages']]]]><![CDATA[>
+Successfully clicked on the WebElement: <[[ChromeDriver: chrome on XP (6598307341eee66f10d1cb970408a5d5)] -> xpath: //span[@class='subject-text ellipsis']]]]><![CDATA[>
+Unable to wait and click on WebElement, Exception: element click intercepted: Element <a style="color:#ffffff; text-align:center;text-decoration: none; font-weight:bold; width:100%; display:block; font-family:Arial, Verdana, sans-serif;" href="https://kundenbereich.check24.de/ec/ef49036ff2c0c68c2e2135c779bc323155b6152c/" target="_blank" rel="noreferrer nofollow noopener">...</a> is not clickable at point (1123, 701). Other element would receive the click: <img proton-src="http://gfx.check24.de/newsletter/global/blind_600.png" alt="" border="0" height="1" style="height:1px !important; width:268px;" title="" width="268" referrerpolicy="no-referrer" class="proton-embedded">
+  (Session info: chrome=75.0.3770.100)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-U9KGDGS', ip: '10.254.127.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\musta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6598307341eee66f10d1cb970408a5d5
+
+  Scenario: Verify that user can successfully verify account via an email. # email_validation.feature:20
+    # Each email confirmation requires a new instance of new email account creation
+    # In this scenario I only provide a validation of already registered and confirmed account
+    # Please Note that in the above scenario a random generated email is used, but in this
+    # email a real email used which has a confirmation email in it
+    # The purpose here is showing how same steps can be used for real email same purposes
+    Given User opens Email Page                                            # New_RegistrationSteps.user_opens_email_page()
+    And User enters "check24qa" and "&6Mu2tafa" and logs in                # New_RegistrationSteps.user_enters_something_and_something_and_logs_in(String,String)
+    When User searches and enters into confirmation email                  # New_RegistrationSteps.user_searches_and_enters_into_confirmation_email()
+    Then User should see confirmation button and click on it               # New_RegistrationSteps.user_should_see_confirmation_button_and_click_on_it()
+      java.lang.AssertionError: Unable to wait and click on the WebElement, using locator: <[[ChromeDriver: chrome on XP (6598307341eee66f10d1cb970408a5d5)] -> xpath: //a[contains(text(),'bestätigen')]]]]><![CDATA[>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at pageObjects.BasePage.waitAndClickElement(BasePage.java:46)
+      	at stepDefinitions.New_RegistrationSteps.user_should_see_confirmation_button_and_click_on_it(New_RegistrationSteps.java:155)
+      	at ?.Then User should see confirmation button and click on it(email_validation.feature:30)
+
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}) on port 31820
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jul 08, 2019 1:37:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}) on port 32423
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jul 08, 2019 1:37:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="feature" classname="runners.MainRunner_Test" time="203.167"/>
+  <testcase name="feature" classname="runners.MainRunner_Test" time="158.2"/>
+  <testcase name="feature" classname="runners.MainRunner_Test" time="33.116"/>
+</testsuite>

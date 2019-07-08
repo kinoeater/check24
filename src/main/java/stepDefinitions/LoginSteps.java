@@ -89,13 +89,6 @@ public class LoginSteps extends DriverFactory {
 	    }
 	    
 
-	    @And("^User should land on home page after login$")
-	    public void user_should_land_on_home_page_after_login() throws Throwable {
-	        
-	    	
-	    	
-	    }
-
 
 }
 

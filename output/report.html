@@ -38,7 +38,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
@@ -51,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 8, 2019 11:37:02 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 8, 2019 01:37:04 PM</span>
 				</a>
 			</li>
 			<li>
@@ -77,6 +78,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -127,10 +129,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -142,10 +144,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>13</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='92.308%'><span class='strong'>12</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='7.692%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -157,10 +159,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>105</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='99.048%'><span class='strong'>104</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0.952%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -174,15 +176,15 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Email confirmation</span>
-						<span class='test-time'>Jul 8, 2019 11:37:02 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Jul 8, 2019 01:37:04 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 1m 6s+570ms</span>
+	<span class='duration right label'>0h 0m 15s+265ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify that user can successfully register with suitable credentials.</span>
@@ -270,8 +272,8 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='13' status='pass'>
-	<span class='duration right label'>0h 0m 19s+712ms</span>
+<div class='scenario node' test-id='13' status='fail'>
+	<span class='duration right label'>0h 0m 16s+276ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify that user can successfully verify account via an email.</span>
@@ -301,12 +303,20 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='17' class='node then pass' status='pass'>
+		<li test-id='17' class='node then fail' status='fail'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then User should see confirmation button and click on it</span>
-				<div class='pre'>passed</div>
+				<div class='pre'><textarea>java.lang.AssertionError: Unable to wait and click on the WebElement, using locator: <[[ChromeDriver: chrome on XP (6598307341eee66f10d1cb970408a5d5)] -> xpath: //a[contains(text(),'bestätigen')]]>
+	at org.junit.Assert.fail(Assert.java:88)
+	at pageObjects.BasePage.waitAndClickElement(BasePage.java:46)
+	at stepDefinitions.New_RegistrationSteps.user_should_see_confirmation_button_and_click_on_it(New_RegistrationSteps.java:155)
+	at ?.Then User should see confirmation button and click on it(email_validation.feature:30)
+</textarea></div>
+				<div class='pre'>Taking a screenshot!</div>
+				<div class='pre'><br></div>
+				<div class='pre'><a target="_blank", href=C:\Users\musta\eclipse-workspace\ty\WebdriverUniversity\CucumberFramework\output\imgs\Mon_Jul_08_13_37_36_EET_2019.jpg><img src=C:\Users\musta\eclipse-workspace\ty\WebdriverUniversity\CucumberFramework\output\imgs\Mon_Jul_08_13_37_36_EET_2019.jpg height=200 width=300></img></a></div>
 			
 		</li>
 	</ul>
@@ -318,12 +328,12 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='18'>
 					<div class='test-heading'>
 						<span class='test-name'>Login functionality tests</span>
-						<span class='test-time'>Jul 8, 2019 11:38:30 AM</span>
+						<span class='test-time'>Jul 8, 2019 01:37:37 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='19' status='pass'>
-	<span class='duration right label'>0h 0m 51s+310ms</span>
+	<span class='duration right label'>0h 0m 54s+919ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Successful login with correct credentials</span>
@@ -397,7 +407,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='28' status='pass'>
-	<span class='duration right label'>0h 1m 39s+894ms</span>
+	<span class='duration right label'>0h 0m 21s+328ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Unsuccessful login with incorrect email</span>
@@ -463,7 +473,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='36' status='pass'>
-	<span class='duration right label'>0h 1m 21s+911ms</span>
+	<span class='duration right label'>0h 0m 55s+109ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Unsuccessful login with incorrect password</span>
@@ -529,7 +539,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='44' status='pass'>
-	<span class='duration right label'>0h 0m 20s+3ms</span>
+	<span class='duration right label'>0h 0m 21s+85ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Unsuccessful login with empty email</span>
@@ -595,7 +605,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='52' status='pass'>
-	<span class='duration right label'>0h 0m 57s+924ms</span>
+	<span class='duration right label'>0h 0m 18s+990ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Unsuccessful login with empty password</span>
@@ -661,7 +671,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='60' status='pass'>
-	<span class='duration right label'>0h 0m 18s+102ms</span>
+	<span class='duration right label'>0h 0m 26s+808ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Unsuccessful login with empty email and empty password</span>
@@ -741,12 +751,12 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='69'>
 					<div class='test-heading'>
 						<span class='test-name'>New user registration functionality tests</span>
-						<span class='test-time'>Jul 8, 2019 11:44:05 AM</span>
+						<span class='test-time'>Jul 8, 2019 01:41:00 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='70' status='pass'>
-	<span class='duration right label'>0h 0m 57s+104ms</span>
+	<span class='duration right label'>0h 0m 14s+574ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify that user can successfully register with suitable credentials.</span>
@@ -835,7 +845,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='81' status='pass'>
-	<span class='duration right label'>0h 0m 30s+99ms</span>
+	<span class='duration right label'>0h 1m 19s+56ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify that user cannot register when entering very short password.</span>
@@ -901,7 +911,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='89' status='pass'>
-	<span class='duration right label'>0h 0m 20s+617ms</span>
+	<span class='duration right label'>0h 0m 48s+912ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify that user cannot register when password and repeating password do not match.</span>
@@ -967,7 +977,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='97' status='pass'>
-	<span class='duration right label'>0h 0m 55s+450ms</span>
+	<span class='duration right label'>0h 0m 12s+511ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify that user cannot register when trying to use an invalid e-mail format.</span>
@@ -1039,12 +1049,12 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='105'>
 					<div class='test-heading'>
 						<span class='test-name'>Travel Search functionality tests</span>
-						<span class='test-time'>Jul 8, 2019 11:46:51 AM</span>
+						<span class='test-time'>Jul 8, 2019 01:43:38 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='106' status='pass'>
-	<span class='duration right label'>0h 1m 30s+379ms</span>
+	<span class='duration right label'>0h 0m 32s+121ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Search a destination for having some good time</span>
@@ -1209,6 +1219,72 @@
 </div>
 <!-- test view -->
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Jul 8, 2019 01:37:34 PM</td>
+                                                        <td class='linked' test-id='17'>Email confirmation.Verify that user can successfully verify account via an email..Then User should see confirmation button and click on it</td>
+                                                        <td><pre><textarea>java.lang.AssertionError: Unable to wait and click on the WebElement, using locator: <[[ChromeDriver: chrome on XP (6598307341eee66f10d1cb970408a5d5)] -> xpath: //a[contains(text(),'bestätigen')]]>
+	at org.junit.Assert.fail(Assert.java:88)
+	at pageObjects.BasePage.waitAndClickElement(BasePage.java:46)
+	at stepDefinitions.New_RegistrationSteps.user_should_see_confirmation_button_and_click_on_it(New_RegistrationSteps.java:155)
+	at ?.Then User should see confirmation button and click on it(email_validation.feature:30)
+</textarea></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -1236,19 +1312,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 8, 2019 11:37:02 AM</div>
+					<div class='panel-lead'>Jul 8, 2019 01:37:04 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 8, 2019 11:48:23 AM</div>
+			 		<div class='panel-lead'>Jul 8, 2019 01:44:11 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>680,570ms</div>
+					<div class='panel-lead'>427,865ms</div>
 				</div>
 			</div>
 		</div>
@@ -1261,31 +1337,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 4,
-				failParent: 0,
+				passParent: 3,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 13,
-				failChild: 0,
+				passChild: 12,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				
-				passGrandChild: 105,
-				failGrandChild: 0,
+				passGrandChild: 104,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 1,
 			};
 		</script>
 		

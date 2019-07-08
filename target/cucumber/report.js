@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4177537500,
+  "duration": 4477479800,
   "status": "passed"
 });
 formatter.scenario({
@@ -82,35 +82,35 @@ formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 51527620400,
+  "duration": 4558208100,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_navigates_to_registration_page()"
 });
 formatter.result({
-  "duration": 4491474000,
+  "duration": 2358712600,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_can_see_email_area()"
 });
 formatter.result({
-  "duration": 91356600,
+  "duration": 38552600,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_is_on_registiration_page()"
 });
 formatter.result({
-  "duration": 55429800,
+  "duration": 50758200,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_enters_a_randomly_generated_email()"
 });
 formatter.result({
-  "duration": 267285800,
+  "duration": 225619400,
   "status": "passed"
 });
 formatter.match({
@@ -123,7 +123,7 @@ formatter.match({
   "location": "New_RegistrationSteps.user_enters_password_as_something(String)"
 });
 formatter.result({
-  "duration": 189358900,
+  "duration": 171313400,
   "status": "passed"
 });
 formatter.match({
@@ -136,36 +136,36 @@ formatter.match({
   "location": "New_RegistrationSteps.user_enters_repeating_password_as_something(String)"
 });
 formatter.result({
-  "duration": 152824000,
+  "duration": 161605500,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_clicks_on_the_submit_button()"
 });
 formatter.result({
-  "duration": 121299300,
+  "duration": 118851700,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_should_close_popup_message()"
 });
 formatter.result({
-  "duration": 5406870300,
+  "duration": 3015965100,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_should_land_on_home_page()"
 });
 formatter.result({
-  "duration": 45636300,
+  "duration": 44440400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 771752800,
+  "duration": 771771100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3470174100,
+  "duration": 3431963000,
   "status": "passed"
 });
 formatter.scenario({
@@ -222,7 +222,7 @@ formatter.match({
   "location": "New_RegistrationSteps.user_opens_email_page()"
 });
 formatter.result({
-  "duration": 9961871100,
+  "duration": 6689883900,
   "status": "passed"
 });
 formatter.match({
@@ -239,25 +239,26 @@ formatter.match({
   "location": "New_RegistrationSteps.user_enters_something_and_something_and_logs_in(String,String)"
 });
 formatter.result({
-  "duration": 3339617800,
+  "duration": 3268791800,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_searches_and_enters_into_confirmation_email()"
 });
 formatter.result({
-  "duration": 1015088200,
+  "duration": 1107490400,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_should_see_confirmation_button_and_click_on_it()"
 });
 formatter.result({
-  "duration": 1913635700,
-  "status": "passed"
+  "duration": 1316962600,
+  "error_message": "java.lang.AssertionError: Unable to wait and click on the WebElement, using locator: \u003c[[ChromeDriver: chrome on XP (6598307341eee66f10d1cb970408a5d5)] -\u003e xpath: //a[contains(text(),\u0027bestätigen\u0027)]]\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat pageObjects.BasePage.waitAndClickElement(BasePage.java:46)\r\n\tat stepDefinitions.New_RegistrationSteps.user_should_see_confirmation_button_and_click_on_it(New_RegistrationSteps.java:155)\r\n\tat ✽.Then User should see confirmation button and click on it(email_validation.feature:30)\r\n",
+  "status": "failed"
 });
 formatter.after({
-  "duration": 658177500,
+  "duration": 1115472500,
   "status": "passed"
 });
 formatter.uri("login.feature");
@@ -269,7 +270,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3446290600,
+  "duration": 3435025000,
   "status": "passed"
 });
 formatter.background({
@@ -308,21 +309,21 @@ formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 41361802100,
+  "duration": 45419013400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_navigates_to_login_page()"
 });
 formatter.result({
-  "duration": 1551171600,
+  "duration": 1104857300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_can_see_login_email_area()"
 });
 formatter.result({
-  "duration": 40920000,
+  "duration": 70795300,
   "status": "passed"
 });
 formatter.scenario({
@@ -378,43 +379,43 @@ formatter.match({
   "location": "LoginSteps.user_is_on_login_page()"
 });
 formatter.result({
-  "duration": 32814100,
+  "duration": 38025500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_enters_following_details_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 444684500,
+  "duration": 316051900,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_on_the_login_button()"
 });
 formatter.result({
-  "duration": 178603700,
+  "duration": 112750600,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_should_close_popup_message()"
 });
 formatter.result({
-  "duration": 4230004400,
+  "duration": 4404036600,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_should_land_on_home_page_after_login()"
 });
 formatter.result({
-  "duration": 58400,
+  "duration": 84600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 904429600,
+  "duration": 817837700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3564705500,
+  "duration": 3444688900,
   "status": "passed"
 });
 formatter.background({
@@ -453,21 +454,21 @@ formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 92369537700,
+  "duration": 15218976900,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_navigates_to_login_page()"
 });
 formatter.result({
-  "duration": 1882506700,
+  "duration": 1508832200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_can_see_login_email_area()"
 });
 formatter.result({
-  "duration": 41697100,
+  "duration": 41867300,
   "status": "passed"
 });
 formatter.scenario({
@@ -518,21 +519,21 @@ formatter.match({
   "location": "LoginSteps.user_is_on_login_page()"
 });
 formatter.result({
-  "duration": 56705800,
+  "duration": 39228200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_enters_following_details_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 605778000,
+  "duration": 291559800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_on_the_login_button()"
 });
 formatter.result({
-  "duration": 160809800,
+  "duration": 121336300,
   "status": "passed"
 });
 formatter.match({
@@ -545,15 +546,15 @@ formatter.match({
   "location": "LoginSteps.user_should_be_notified_with_something_on_login_emailpwd_error(String)"
 });
 formatter.result({
-  "duration": 1195085300,
+  "duration": 648300900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 830081500,
+  "duration": 802206700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3554670400,
+  "duration": 3454755700,
   "status": "passed"
 });
 formatter.background({
@@ -592,21 +593,21 @@ formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 74479981100,
+  "duration": 48645454200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_navigates_to_login_page()"
 });
 formatter.result({
-  "duration": 2324442300,
+  "duration": 1685435500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_can_see_login_email_area()"
 });
 formatter.result({
-  "duration": 60811600,
+  "duration": 67179500,
   "status": "passed"
 });
 formatter.scenario({
@@ -657,21 +658,21 @@ formatter.match({
   "location": "LoginSteps.user_is_on_login_page()"
 });
 formatter.result({
-  "duration": 69694300,
+  "duration": 33132800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_enters_following_details_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 516333700,
+  "duration": 311788000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_on_the_login_button()"
 });
 formatter.result({
-  "duration": 119451800,
+  "duration": 105211200,
   "status": "passed"
 });
 formatter.match({
@@ -684,15 +685,15 @@ formatter.match({
   "location": "LoginSteps.user_should_be_notified_with_something_on_login_emailpwd_error(String)"
 });
 formatter.result({
-  "duration": 784446700,
+  "duration": 793897000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 924687900,
+  "duration": 778630800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3608297400,
+  "duration": 3652529800,
   "status": "passed"
 });
 formatter.background({
@@ -731,21 +732,21 @@ formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 14021750400,
+  "duration": 15386530200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_navigates_to_login_page()"
 });
 formatter.result({
-  "duration": 1108763300,
+  "duration": 930421500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_can_see_login_email_area()"
 });
 formatter.result({
-  "duration": 50199200,
+  "duration": 37721700,
   "status": "passed"
 });
 formatter.scenario({
@@ -796,21 +797,21 @@ formatter.match({
   "location": "LoginSteps.user_is_on_login_page()"
 });
 formatter.result({
-  "duration": 38016300,
+  "duration": 26735000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_enters_following_details_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 329644700,
+  "duration": 249822300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_on_the_login_button()"
 });
 formatter.result({
-  "duration": 105032700,
+  "duration": 108008800,
   "status": "passed"
 });
 formatter.match({
@@ -823,15 +824,15 @@ formatter.match({
   "location": "LoginSteps.user_should_be_notified_with_something_on_login_email_error(String)"
 });
 formatter.result({
-  "duration": 727871800,
+  "duration": 684625500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 937127700,
+  "duration": 819522500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3470139900,
+  "duration": 3425348300,
   "status": "passed"
 });
 formatter.background({
@@ -870,21 +871,21 @@ formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 51902900100,
+  "duration": 13598645700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_navigates_to_login_page()"
 });
 formatter.result({
-  "duration": 1223458500,
+  "duration": 822832000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_can_see_login_email_area()"
 });
 formatter.result({
-  "duration": 102105800,
+  "duration": 55612500,
   "status": "passed"
 });
 formatter.scenario({
@@ -935,21 +936,21 @@ formatter.match({
   "location": "LoginSteps.user_is_on_login_page()"
 });
 formatter.result({
-  "duration": 26753900,
+  "duration": 26782300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_enters_following_details_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 364815500,
+  "duration": 289967400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_on_the_login_button()"
 });
 formatter.result({
-  "duration": 187540500,
+  "duration": 155428200,
   "status": "passed"
 });
 formatter.match({
@@ -962,15 +963,15 @@ formatter.match({
   "location": "LoginSteps.user_should_be_notified_with_something_on_empty_password_error(String)"
 });
 formatter.result({
-  "duration": 643612600,
+  "duration": 606513000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 835283500,
+  "duration": 866251900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3537521000,
+  "duration": 3421180000,
   "status": "passed"
 });
 formatter.background({
@@ -1009,21 +1010,21 @@ formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 11007663300,
+  "duration": 20330467600,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_navigates_to_login_page()"
 });
 formatter.result({
-  "duration": 2025309900,
+  "duration": 1796484100,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_can_see_login_email_area()"
 });
 formatter.result({
-  "duration": 36728400,
+  "duration": 35220900,
   "status": "passed"
 });
 formatter.scenario({
@@ -1079,21 +1080,21 @@ formatter.match({
   "location": "LoginSteps.user_is_on_login_page()"
 });
 formatter.result({
-  "duration": 41917100,
+  "duration": 26320800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_enters_following_details_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 434912200,
+  "duration": 222746800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_on_the_login_button()"
 });
 formatter.result({
-  "duration": 129735000,
+  "duration": 107421300,
   "status": "passed"
 });
 formatter.match({
@@ -1106,7 +1107,7 @@ formatter.match({
   "location": "LoginSteps.user_should_be_notified_with_something_on_login_email_error(String)"
 });
 formatter.result({
-  "duration": 675985900,
+  "duration": 785794100,
   "status": "passed"
 });
 formatter.match({
@@ -1119,11 +1120,11 @@ formatter.match({
   "location": "LoginSteps.user_should_be_notified_with_something_on_empty_password_error(String)"
 });
 formatter.result({
-  "duration": 204168100,
+  "duration": 72054200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 878269700,
+  "duration": 820571300,
   "status": "passed"
 });
 formatter.uri("new_registiration.feature");
@@ -1135,7 +1136,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3426892000,
+  "duration": 3319483700,
   "status": "passed"
 });
 formatter.background({
@@ -1174,21 +1175,21 @@ formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 44221870100,
+  "duration": 5432297900,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_navigates_to_registration_page()"
 });
 formatter.result({
-  "duration": 4293080800,
+  "duration": 2225544100,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_can_see_email_area()"
 });
 formatter.result({
-  "duration": 67091700,
+  "duration": 35721500,
   "status": "passed"
 });
 formatter.scenario({
@@ -1252,14 +1253,14 @@ formatter.match({
   "location": "New_RegistrationSteps.user_is_on_registiration_page()"
 });
 formatter.result({
-  "duration": 41154900,
+  "duration": 26722800,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_enters_a_randomly_generated_email()"
 });
 formatter.result({
-  "duration": 413642200,
+  "duration": 248923200,
   "status": "passed"
 });
 formatter.match({
@@ -1272,7 +1273,7 @@ formatter.match({
   "location": "New_RegistrationSteps.user_enters_password_as_something(String)"
 });
 formatter.result({
-  "duration": 171130100,
+  "duration": 194898600,
   "status": "passed"
 });
 formatter.match({
@@ -1285,36 +1286,36 @@ formatter.match({
   "location": "New_RegistrationSteps.user_enters_repeating_password_as_something(String)"
 });
 formatter.result({
-  "duration": 153986400,
+  "duration": 219389100,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_clicks_on_the_submit_button()"
 });
 formatter.result({
-  "duration": 118688500,
+  "duration": 168115000,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_should_close_popup_message()"
 });
 formatter.result({
-  "duration": 4104396200,
+  "duration": 2616587600,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_should_land_on_home_page()"
 });
 formatter.result({
-  "duration": 75615500,
+  "duration": 73570800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 840115800,
+  "duration": 854941800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3475570900,
+  "duration": 3468820300,
   "status": "passed"
 });
 formatter.background({
@@ -1353,21 +1354,21 @@ formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 22308427900,
+  "duration": 69363694900,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_navigates_to_registration_page()"
 });
 formatter.result({
-  "duration": 2882805100,
+  "duration": 4082059800,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_can_see_email_area()"
 });
 formatter.result({
-  "duration": 75748100,
+  "duration": 43222000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1424,21 +1425,21 @@ formatter.match({
   "location": "New_RegistrationSteps.user_is_on_registiration_page()"
 });
 formatter.result({
-  "duration": 66967000,
+  "duration": 34369400,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_enters_randomly_generated_email_and_following_details_for_registration(DataTable)"
 });
 formatter.result({
-  "duration": 513321700,
+  "duration": 543932800,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_clicks_on_the_submit_button()"
 });
 formatter.result({
-  "duration": 96386000,
+  "duration": 94229000,
   "status": "passed"
 });
 formatter.match({
@@ -1451,15 +1452,15 @@ formatter.match({
   "location": "New_RegistrationSteps.user_should_be_notified_with_something_on_password_error(String)"
 });
 formatter.result({
-  "duration": 666944400,
+  "duration": 1414842700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 899995800,
+  "duration": 783195000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3496295700,
+  "duration": 3436037400,
   "status": "passed"
 });
 formatter.background({
@@ -1498,21 +1499,21 @@ formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 12376759900,
+  "duration": 41590085100,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_navigates_to_registration_page()"
 });
 formatter.result({
-  "duration": 2941228000,
+  "duration": 2552021500,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_can_see_email_area()"
 });
 formatter.result({
-  "duration": 109245100,
+  "duration": 83829000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1569,21 +1570,21 @@ formatter.match({
   "location": "New_RegistrationSteps.user_is_on_registiration_page()"
 });
 formatter.result({
-  "duration": 48506400,
+  "duration": 25432300,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_enters_randomly_generated_email_and_following_details_for_registration(DataTable)"
 });
 formatter.result({
-  "duration": 686124500,
+  "duration": 502130200,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_clicks_on_the_submit_button()"
 });
 formatter.result({
-  "duration": 172696800,
+  "duration": 122201500,
   "status": "passed"
 });
 formatter.match({
@@ -1596,15 +1597,15 @@ formatter.match({
   "location": "New_RegistrationSteps.user_should_be_notified_with_something_on_password_error(String)"
 });
 formatter.result({
-  "duration": 776933800,
+  "duration": 591500500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 940975900,
+  "duration": 775434700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3484772700,
+  "duration": 3414012700,
   "status": "passed"
 });
 formatter.background({
@@ -1643,21 +1644,21 @@ formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 47134829400,
+  "duration": 4882601100,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_navigates_to_registration_page()"
 });
 formatter.result({
-  "duration": 3359615300,
+  "duration": 2865798600,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_can_see_email_area()"
 });
 formatter.result({
-  "duration": 75724500,
+  "duration": 46348700,
   "status": "passed"
 });
 formatter.scenario({
@@ -1716,21 +1717,21 @@ formatter.match({
   "location": "New_RegistrationSteps.user_is_on_registiration_page()"
 });
 formatter.result({
-  "duration": 80423200,
+  "duration": 55757400,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_enters_following_details_for_registration(DataTable)"
 });
 formatter.result({
-  "duration": 548197800,
+  "duration": 465879700,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_clicks_on_the_submit_button()"
 });
 formatter.result({
-  "duration": 100871500,
+  "duration": 128804000,
   "status": "passed"
 });
 formatter.match({
@@ -1743,11 +1744,11 @@ formatter.match({
   "location": "New_RegistrationSteps.user_should_be_notified_with_something_on_email_error(String)"
 });
 formatter.result({
-  "duration": 657901600,
+  "duration": 642735400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 791986700,
+  "duration": 746899700,
   "status": "passed"
 });
 formatter.uri("travelsearch.feature");
@@ -1759,7 +1760,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3491138000,
+  "duration": 3454104700,
   "status": "passed"
 });
 formatter.background({
@@ -1839,56 +1840,56 @@ formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 47900699900,
+  "duration": 6002699100,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_navigates_to_login_page()"
 });
 formatter.result({
-  "duration": 2218593200,
+  "duration": 910729200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_can_see_login_email_area()"
 });
 formatter.result({
-  "duration": 37164900,
+  "duration": 60393500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_is_on_login_page()"
 });
 formatter.result({
-  "duration": 24236800,
+  "duration": 33661600,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_enters_following_details_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 422448900,
+  "duration": 357407100,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_on_the_login_button()"
 });
 formatter.result({
-  "duration": 223940400,
+  "duration": 127853900,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_should_close_popup_message()"
 });
 formatter.result({
-  "duration": 4575713300,
+  "duration": 3923801100,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_should_land_on_home_page_after_login()"
 });
 formatter.result({
-  "duration": 57900,
+  "duration": 30200,
   "status": "passed"
 });
 formatter.scenario({
@@ -1943,7 +1944,7 @@ formatter.match({
   "location": "TravelSearchSteps.user_should_land_on_travel_page()"
 });
 formatter.result({
-  "duration": 11770694100,
+  "duration": 5944378800,
   "status": "passed"
 });
 formatter.match({
@@ -1956,7 +1957,7 @@ formatter.match({
   "location": "TravelSearchSteps.user_enters_duration_as_something_days(String)"
 });
 formatter.result({
-  "duration": 578816200,
+  "duration": 453046500,
   "status": "passed"
 });
 formatter.match({
@@ -1969,7 +1970,7 @@ formatter.match({
   "location": "TravelSearchSteps.user_enters_arrival_date_as_something(String)"
 });
 formatter.result({
-  "duration": 227260200,
+  "duration": 291844900,
   "status": "passed"
 });
 formatter.match({
@@ -1982,7 +1983,7 @@ formatter.match({
   "location": "TravelSearchSteps.user_enters_return_date_as_something(String)"
 });
 formatter.result({
-  "duration": 247016500,
+  "duration": 328291200,
   "status": "passed"
 });
 formatter.match({
@@ -1995,7 +1996,7 @@ formatter.match({
   "location": "TravelSearchSteps.user_enters_destination_as_something(String)"
 });
 formatter.result({
-  "duration": 4155381500,
+  "duration": 1827286100,
   "status": "passed"
 });
 formatter.match({
@@ -2008,25 +2009,25 @@ formatter.match({
   "location": "TravelSearchSteps.user_enters_airport_as_something(String)"
 });
 formatter.result({
-  "duration": 1136331600,
+  "duration": 1036028900,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelSearchSteps.user_clicks_on_the_find_a_trip_button()"
 });
 formatter.result({
-  "duration": 13033941500,
+  "duration": 6952888800,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelSearchSteps.user_is_presented_at_least_one_search_result()"
 });
 formatter.result({
-  "duration": 311069900,
+  "duration": 397462400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1005219300,
+  "duration": 940892600,
   "status": "passed"
 });
 });
