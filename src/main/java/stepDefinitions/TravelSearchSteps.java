@@ -21,7 +21,7 @@ public class TravelSearchSteps extends DriverFactory {
     public void user_clicks_on_the_find_a_trip_button() throws Throwable {
     	
     	travelPage.waitAndClickElement(travelPage.find_button);
-    	
+    
     }
     
     @And("^User enters travel options one adault$")
@@ -34,8 +34,9 @@ public class TravelSearchSteps extends DriverFactory {
 
     @And("^User enters destination as \"([^\"]*)\"$")
     public void user_enters_destination_as_something(String travel_destination) throws Throwable {
+    	
     	travelPage.enterDestination(travel_destination);
-    	Thread.sleep(3000);
+    	
     	
     }
 
@@ -43,7 +44,7 @@ public class TravelSearchSteps extends DriverFactory {
     public void user_enters_airport_as_something(String departure) throws Throwable {
     	
     	travelPage.enterAirport(departure);
-
+    	
     }
 
     @And("^User enters duration as \"([^\"]*)\" days$")
@@ -51,12 +52,14 @@ public class TravelSearchSteps extends DriverFactory {
     	
     	 travelPage.enterDuration(duration);
     	
+    	
     }
 
     @And("^User enters arrival date as \"([^\"]*)\"$")
     public void user_enters_arrival_date_as_something(String arrival_time) throws Throwable {
     	
     	travelPage.enterArrival(arrival_time);
+    	
     }
 
     @And("^User enters return date as \"([^\"]*)\"$")

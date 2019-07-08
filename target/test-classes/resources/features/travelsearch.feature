@@ -10,7 +10,7 @@ Feature: Travel Search functionality tests
      And User is on login page
      And User enters following details for login
       | email                | password  | 
-      | yolmustafa@gmail.com | &6Mu2tafa |      
+      | testworld@gmail.com | &6Mu2tafa |      
      And  User clicks on the login button
     When  User should close popup message
      Then User should land on home page after login
@@ -21,8 +21,8 @@ Feature: Travel Search functionality tests
      And User enters duration as "10" days 
      And User enters arrival date as "10.09.2019"
      And User enters return date as "19.09.2019"
-     And User enters destination as "alanya"
-     And User enters airport as "berlin"
+     And User enters destination as "Side & Alanya"
+     And User enters airport as "stutt"
      When User clicks on the find a trip button
      Then User is presented at least one search result
      

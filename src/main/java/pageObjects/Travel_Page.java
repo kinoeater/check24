@@ -1,6 +1,8 @@
 package pageObjects;
 
 import java.io.IOException;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -45,6 +47,14 @@ public class Travel_Page extends BasePage{
 	@FindBy(how = How.XPATH, using = "//*[@id=\"searchform-travelsearch\"]/div[2]/div[2]/span[1]")                                
     public WebElement travel_number;
 	
+	
+	@FindBy(how = How.XPATH, using = "//ul[@id='ui-id-3']")                                
+    public WebElement stuttgart;
+	
+	@FindBy(how = How.PARTIAL_LINK_TEXT, using = "Alanya, Side & Alanya, Türkei")
+    public WebElement alanya;
+	
+	
 	public Travel_Page() throws IOException {
 		super();
 	}
@@ -59,6 +69,7 @@ public class Travel_Page extends BasePage{
 	
 	public Travel_Page enterReturn(String return_time) throws Exception {
 		
+		return_input.clear();
 		return_input.sendKeys(return_time);
 		return new Travel_Page();
 	}
@@ -66,6 +77,7 @@ public class Travel_Page extends BasePage{
 	
 	public Travel_Page enterArrival(String arrival_time) throws Exception {
 		
+		arrival_input.clear();
 		arrival_input.sendKeys(arrival_time);
 		return new Travel_Page();
 	}
@@ -73,13 +85,17 @@ public class Travel_Page extends BasePage{
 	
 	public Travel_Page enterAirport(String departure) throws Exception {
 
-		airport.sendKeys(departure,Keys.ENTER);
+		airport.clear();
+		airport.sendKeys(departure);
+		actionMoveAndClick(stuttgart);
 		return new Travel_Page();
 	}
 	
 	public Travel_Page enterDestination(String travel_destination) throws Exception {
 		
+		destination.clear();
 		destination.sendKeys(travel_destination,Keys.ENTER);
+ 		getDriver().findElements(By.xpath("//li")).get(3).click();
 		return new Travel_Page();
 	}
 	

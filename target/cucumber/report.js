@@ -1,28 +1,28 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/resources/features/new_registiration.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/resources/features/travelsearch.feature");
 formatter.feature({
   "line": 1,
-  "name": "New user registration functionality tests",
+  "name": "Travel Search functionality tests",
   "description": "",
-  "id": "new-user-registration-functionality-tests",
+  "id": "travel-search-functionality-tests",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4057259900,
+  "duration": 4075143600,
   "status": "passed"
 });
 formatter.background({
   "comments": [
     {
       "line": 2,
-      "value": "# You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
+      "value": "#You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
     },
     {
       "line": 3,
-      "value": "# Then Bonigarcia’s webdriver manager will take care of the rest"
+      "value": "#Then Bonigarcia’s webdriver manager will take care of the rest"
     }
   ],
   "line": 5,
-  "name": "User lands on check24 page, then navigates to registiration page",
+  "name": "User logs into Check24 WebPage",
   "description": "",
   "type": "background",
   "keyword": "Background"
@@ -34,733 +34,245 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "User navigates to registration page",
-  "keyword": "When "
+  "name": "User navigates to login page",
+  "keyword": "And "
 });
 formatter.step({
   "line": 9,
-  "name": "User can see email area",
+  "name": "User can see login email area",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "User is on login page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "User enters following details for login",
+  "rows": [
+    {
+      "cells": [
+        "email",
+        "password"
+      ],
+      "line": 12
+    },
+    {
+      "cells": [
+        "testworld@gmail.com",
+        "\u00266Mu2tafa"
+      ],
+      "line": 13
+    }
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 14,
+  "name": "User clicks on the login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "User should close popup message",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 16,
+  "name": "User should land on home page after login",
   "keyword": "Then "
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 10772866800,
+  "duration": 16907021300,
   "status": "passed"
 });
 formatter.match({
-  "location": "New_RegistrationSteps.user_navigates_to_registration_page()"
+  "location": "LoginSteps.user_navigates_to_login_page()"
 });
 formatter.result({
-  "duration": 2968259700,
+  "duration": 1112436500,
   "status": "passed"
 });
 formatter.match({
-  "location": "New_RegistrationSteps.user_can_see_email_area()"
+  "location": "LoginSteps.user_can_see_login_email_area()"
 });
 formatter.result({
-  "duration": 66228900,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 11,
-  "name": "Verify that user can successfully register with suitable credentials.",
-  "description": "",
-  "id": "new-user-registration-functionality-tests;verify-that-user-can-successfully-register-with-suitable-credentials.",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 12,
-      "value": "# Used basic parameterization for password and repeated password"
-    },
-    {
-      "line": 13,
-      "value": "# If same email is used in one of the successful registrations beforehand, system will reject it if we use it second time."
-    },
-    {
-      "line": 14,
-      "value": "# To avoid this, I added a few lines that creates random e-mail addresses for registration purposes"
-    }
-  ],
-  "line": 16,
-  "name": "User is on registiration page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "User enters a randomly generated email",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 18,
-  "name": "User enters Password as \"9876Strong!\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 19,
-  "name": "User enters Repeating Password as \"9876Strong!\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 20,
-  "name": "User clicks on the submit button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 21,
-  "name": "User should close popup message",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 22,
-  "name": "User should land on home page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_is_on_registiration_page()"
-});
-formatter.result({
-  "duration": 56718600,
+  "duration": 37344100,
   "status": "passed"
 });
 formatter.match({
-  "location": "New_RegistrationSteps.user_enters_a_randomly_generated_email()"
+  "location": "LoginSteps.user_is_on_login_page()"
 });
 formatter.result({
-  "duration": 307109300,
+  "duration": 45363400,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "9876Strong!",
-      "offset": 25
-    }
-  ],
-  "location": "New_RegistrationSteps.user_enters_password_as_something(String)"
+  "location": "LoginSteps.user_enters_following_details_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 181996100,
+  "duration": 481322100,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "9876Strong!",
-      "offset": 35
-    }
-  ],
-  "location": "New_RegistrationSteps.user_enters_repeating_password_as_something(String)"
+  "location": "LoginSteps.user_clicks_on_the_login_button()"
 });
 formatter.result({
-  "duration": 170005800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_clicks_on_the_submit_button()"
-});
-formatter.result({
-  "duration": 116572400,
+  "duration": 225411100,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_should_close_popup_message()"
 });
 formatter.result({
-  "duration": 3511736800,
+  "duration": 3704915000,
   "status": "passed"
 });
 formatter.match({
-  "location": "New_RegistrationSteps.user_should_land_on_home_page()"
+  "location": "LoginSteps.user_should_land_on_home_page_after_login()"
 });
 formatter.result({
-  "duration": 110437000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 953334000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 3506605600,
-  "status": "passed"
-});
-formatter.background({
-  "comments": [
-    {
-      "line": 2,
-      "value": "# You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
-    },
-    {
-      "line": 3,
-      "value": "# Then Bonigarcia’s webdriver manager will take care of the rest"
-    }
-  ],
-  "line": 5,
-  "name": "User lands on check24 page, then navigates to registiration page",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "User opens Check24 WebPage",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "User navigates to registration page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 9,
-  "name": "User can see email area",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_opens_check24_webpage()"
-});
-formatter.result({
-  "duration": 12568144800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_navigates_to_registration_page()"
-});
-formatter.result({
-  "duration": 3172491300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_can_see_email_area()"
-});
-formatter.result({
-  "duration": 90300000,
+  "duration": 26400,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 24,
-  "name": "Verify that user can successfully verify account via an email.",
+  "line": 18,
+  "name": "Search a destination for having some good time",
   "description": "",
-  "id": "new-user-registration-functionality-tests;verify-that-user-can-successfully-verify-account-via-an-email.",
+  "id": "travel-search-functionality-tests;search-a-destination-for-having-some-good-time",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "comments": [
-    {
-      "line": 25,
-      "value": "# Each email confirmation requires a new instance of new email account creation"
-    },
-    {
-      "line": 26,
-      "value": "# In this scenario I only provide a validation of already registered and confirmed account"
-    },
-    {
-      "line": 27,
-      "value": "# to show how same steps can be used for the same purposes"
-    }
-  ],
-  "line": 29,
-  "name": "User opens Email Page",
+  "line": 20,
+  "name": "User should land on travel page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 30,
-  "name": "User enters \"check24qa\" and \"\u00266Mu2tafa\" and logs in",
+  "line": 21,
+  "name": "User enters duration as \"10\" days",
   "keyword": "And "
 });
 formatter.step({
-  "line": 31,
-  "name": "User enters into confirmation email",
+  "line": 22,
+  "name": "User enters arrival date as \"10.09.2019\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 23,
+  "name": "User enters return date as \"19.09.2019\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 24,
+  "name": "User enters destination as \"Side \u0026 Alanya\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 25,
+  "name": "User enters airport as \"stutt\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 26,
+  "name": "User clicks on the find a trip button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 32,
-  "name": "User should see confirmation button and click on it",
+  "line": 27,
+  "name": "User is presented at least one search result",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "New_RegistrationSteps.user_opens_email_page()"
+  "location": "TravelSearchSteps.user_should_land_on_travel_page()"
 });
 formatter.result({
-  "duration": 4156982500,
+  "duration": 3847573700,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "check24qa",
-      "offset": 13
-    },
+      "val": "10",
+      "offset": 25
+    }
+  ],
+  "location": "TravelSearchSteps.user_enters_duration_as_something_days(String)"
+});
+formatter.result({
+  "duration": 474738500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
     {
-      "val": "\u00266Mu2tafa",
+      "val": "10.09.2019",
       "offset": 29
     }
   ],
-  "location": "New_RegistrationSteps.user_enters_something_and_something_and_logs_in(String,String)"
+  "location": "TravelSearchSteps.user_enters_arrival_date_as_something(String)"
 });
 formatter.result({
-  "duration": 3414301400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_enters_into_confirmation_email()"
-});
-formatter.result({
-  "duration": 697124100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_should_see_confirmation_button_and_click_on_it()"
-});
-formatter.result({
-  "duration": 1348508700,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 693194000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 3541534000,
-  "status": "passed"
-});
-formatter.background({
-  "comments": [
-    {
-      "line": 2,
-      "value": "# You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
-    },
-    {
-      "line": 3,
-      "value": "# Then Bonigarcia’s webdriver manager will take care of the rest"
-    }
-  ],
-  "line": 5,
-  "name": "User lands on check24 page, then navigates to registiration page",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "User opens Check24 WebPage",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "User navigates to registration page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 9,
-  "name": "User can see email area",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_opens_check24_webpage()"
-});
-formatter.result({
-  "duration": 12669507700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_navigates_to_registration_page()"
-});
-formatter.result({
-  "duration": 2845329100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_can_see_email_area()"
-});
-formatter.result({
-  "duration": 74839100,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 34,
-  "name": "Verify that user cannot register when entering very short password.",
-  "description": "",
-  "id": "new-user-registration-functionality-tests;verify-that-user-cannot-register-when-entering-very-short-password.",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 35,
-      "value": "# Again, I used random e-mail address for the sake of the test case"
-    }
-  ],
-  "line": 37,
-  "name": "User is on registiration page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 38,
-  "name": "User enters randomly generated email and following details for registration",
-  "rows": [
-    {
-      "cells": [
-        "password",
-        "repeatpassword"
-      ],
-      "line": 39
-    },
-    {
-      "cells": [
-        "12",
-        "12"
-      ],
-      "line": 40
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 41,
-  "name": "User clicks on the submit button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 42,
-  "name": "User should be notified with \"Das Passwort sollte zwischen 6 und 50 Zeichen lang sein.\" on password error",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_is_on_registiration_page()"
-});
-formatter.result({
-  "duration": 62638300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_enters_randomly_generated_email_and_following_details_for_registration(DataTable)"
-});
-formatter.result({
-  "duration": 533382400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_clicks_on_the_submit_button()"
-});
-formatter.result({
-  "duration": 105939400,
+  "duration": 224500600,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Das Passwort sollte zwischen 6 und 50 Zeichen lang sein.",
-      "offset": 30
+      "val": "19.09.2019",
+      "offset": 28
     }
   ],
-  "location": "New_RegistrationSteps.user_should_be_notified_with_something_on_password_error(String)"
+  "location": "TravelSearchSteps.user_enters_return_date_as_something(String)"
 });
 formatter.result({
-  "duration": 1231472200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 872926800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 3496885300,
-  "status": "passed"
-});
-formatter.background({
-  "comments": [
-    {
-      "line": 2,
-      "value": "# You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
-    },
-    {
-      "line": 3,
-      "value": "# Then Bonigarcia’s webdriver manager will take care of the rest"
-    }
-  ],
-  "line": 5,
-  "name": "User lands on check24 page, then navigates to registiration page",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "User opens Check24 WebPage",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "User navigates to registration page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 9,
-  "name": "User can see email area",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_opens_check24_webpage()"
-});
-formatter.result({
-  "duration": 11679168200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_navigates_to_registration_page()"
-});
-formatter.result({
-  "duration": 2954552600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_can_see_email_area()"
-});
-formatter.result({
-  "duration": 127518300,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 44,
-  "name": "Verify that user cannot register when password and repeating password do not match.",
-  "description": "",
-  "id": "new-user-registration-functionality-tests;verify-that-user-cannot-register-when-password-and-repeating-password-do-not-match.",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 45,
-      "value": "# Random e-mail address"
-    }
-  ],
-  "line": 47,
-  "name": "User is on registiration page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 48,
-  "name": "User enters randomly generated email and following details for registration",
-  "rows": [
-    {
-      "cells": [
-        "password",
-        "repeatpassword"
-      ],
-      "line": 49
-    },
-    {
-      "cells": [
-        "1234pwdee",
-        "pwd345455"
-      ],
-      "line": 50
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 51,
-  "name": "User clicks on the submit button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 52,
-  "name": "User should be notified with \"Die Passwörter stimmen nicht überein.\" on password error",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_is_on_registiration_page()"
-});
-formatter.result({
-  "duration": 29346500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_enters_randomly_generated_email_and_following_details_for_registration(DataTable)"
-});
-formatter.result({
-  "duration": 728201700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_clicks_on_the_submit_button()"
-});
-formatter.result({
-  "duration": 213663700,
+  "duration": 281881000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Die Passwörter stimmen nicht überein.",
-      "offset": 30
+      "val": "Side \u0026 Alanya",
+      "offset": 28
     }
   ],
-  "location": "New_RegistrationSteps.user_should_be_notified_with_something_on_password_error(String)"
+  "location": "TravelSearchSteps.user_enters_destination_as_something(String)"
 });
 formatter.result({
-  "duration": 1119278300,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 883024000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 3486908900,
-  "status": "passed"
-});
-formatter.background({
-  "comments": [
-    {
-      "line": 2,
-      "value": "# You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
-    },
-    {
-      "line": 3,
-      "value": "# Then Bonigarcia’s webdriver manager will take care of the rest"
-    }
-  ],
-  "line": 5,
-  "name": "User lands on check24 page, then navigates to registiration page",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "User opens Check24 WebPage",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "User navigates to registration page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 9,
-  "name": "User can see email area",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_opens_check24_webpage()"
-});
-formatter.result({
-  "duration": 13601386400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_navigates_to_registration_page()"
-});
-formatter.result({
-  "duration": 2863733500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_can_see_email_area()"
-});
-formatter.result({
-  "duration": 129444600,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 54,
-  "name": "Verify that user cannot register when trying to use an invalid e-mail format.",
-  "description": "",
-  "id": "new-user-registration-functionality-tests;verify-that-user-cannot-register-when-trying-to-use-an-invalid-e-mail-format.",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 55,
-      "value": "# E-mail address without @ sign"
-    }
-  ],
-  "line": 57,
-  "name": "User is on registiration page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 58,
-  "name": "User enters following details for registration",
-  "rows": [
-    {
-      "cells": [
-        "email",
-        "password",
-        "repeatpassword"
-      ],
-      "line": 59
-    },
-    {
-      "cells": [
-        "noatsignail3.com",
-        "1234pwd",
-        "1234pwd"
-      ],
-      "line": 60
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 61,
-  "name": "User clicks on the submit button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 62,
-  "name": "User should be notified with \"Bitte geben Sie eine gültige E-Mail-Adresse an.\" on email error",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_is_on_registiration_page()"
-});
-formatter.result({
-  "duration": 45451600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_enters_following_details_for_registration(DataTable)"
-});
-formatter.result({
-  "duration": 653002200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_clicks_on_the_submit_button()"
-});
-formatter.result({
-  "duration": 127543200,
-  "status": "passed"
+  "duration": 360939500,
+  "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d75.0.3770.100)\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-U9KGDGS\u0027, ip: \u0027192.168.1.42\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\\Users\\musta\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62367}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 4738bbb2340a20beed4eaae16e726d0f\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.Travel_Page.enterDestination(Travel_Page.java:98)\r\n\tat stepDefinitions.TravelSearchSteps.user_enters_destination_as_something(TravelSearchSteps.java:38)\r\n\tat ✽.And User enters destination as \"Side \u0026 Alanya\"(src/test/java/resources/features/travelsearch.feature:24)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Bitte geben Sie eine gültige E-Mail-Adresse an.",
-      "offset": 30
+      "val": "stutt",
+      "offset": 24
     }
   ],
-  "location": "New_RegistrationSteps.user_should_be_notified_with_something_on_email_error(String)"
+  "location": "TravelSearchSteps.user_enters_airport_as_something(String)"
 });
 formatter.result({
-  "duration": 806279300,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.match({
+  "location": "TravelSearchSteps.user_clicks_on_the_find_a_trip_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "TravelSearchSteps.user_is_presented_at_least_one_search_result()"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 884273700,
+  "duration": 1726433500,
   "status": "passed"
 });
 });
