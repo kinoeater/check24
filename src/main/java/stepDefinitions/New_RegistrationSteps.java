@@ -3,6 +3,8 @@ package stepDefinitions;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+
+import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
@@ -139,18 +141,19 @@ public class New_RegistrationSteps extends DriverFactory {
     	emailPage.verify_user_area();
     }
 
-    @When("^User enters into confirmation email$")
-    public void user_enters_into_confirmation_email() throws Throwable {
+    @When("^User searches and enters into confirmation email$")
+    public void user_searches_and_enters_into_confirmation_email() throws Throwable {
     	
-    	emailPage.enters_confirm_email();
+    	emailPage.search_message_area.sendKeys("E-Mail-Adresse bestätigen",Keys.ENTER);
+    	emailPage.waitAndClickElement(emailPage.confirmation_email_link_2);
     	  
     }
 
     @Then("^User should see confirmation button and click on it$")
     public void user_should_see_confirmation_button_and_click_on_it() throws Throwable {
         
-    	emailPage.click_confirm_button();
-    	
+    	emailPage.waitAndClickElement(emailPage.confirm_button);
+    	  	
     }
 
     @And("^User enters \"([^\"]*)\" and \"([^\"]*)\" and logs in$")

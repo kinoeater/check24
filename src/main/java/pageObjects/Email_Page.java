@@ -18,7 +18,7 @@ public class Email_Page extends BasePage {
  @FindBy(how = How.XPATH, using = "//span[@class='subject-text ellipsis'][contains(text(),'E-Mail-Adresse bestätigen und 50 CHECK24 Punkte (5')]")
  public WebElement confirmation_email_link;
  
- @FindBy(how = How.XPATH, using = "//div[@class='conversation marked hasLabels read']")
+ @FindBy(how = How.XPATH, using = "//span[@class='subject-text ellipsis']")
  public WebElement confirmation_email_link_2;
  
  @FindBy(how = How.XPATH, using = "//a[contains(text(),'bestätigen')]")

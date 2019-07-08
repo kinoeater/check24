@@ -2,38 +2,38 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="129990" started-at="2019-07-08T07:18:34Z" finished-at="2019-07-08T07:20:44Z">
+  <suite name="Default suite" duration-ms="14302" started-at="2019-07-08T08:20:16Z" finished-at="2019-07-08T08:20:31Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.LoginRunner_Test@cb644e]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.Email_Validation_Test@cb644e]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="129990" started-at="2019-07-08T07:18:34Z" finished-at="2019-07-08T07:20:44Z">
-      <class name="runners.LoginRunner_Test">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.LoginRunner_Test@cb644e]" name="setUpClass" is-config="true" duration-ms="221" started-at="2019-07-08T10:18:34Z" finished-at="2019-07-08T10:18:34Z">
+    <test name="Default test" duration-ms="14302" started-at="2019-07-08T08:20:16Z" finished-at="2019-07-08T08:20:31Z">
+      <class name="runners.Email_Validation_Test">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.Email_Validation_Test@cb644e]" name="setUpClass" is-config="true" duration-ms="203" started-at="2019-07-08T11:20:16Z" finished-at="2019-07-08T11:20:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.LoginRunner_Test@cb644e]" name="feature" duration-ms="129314" started-at="2019-07-08T10:18:34Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-07-08T10:20:43Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.Email_Validation_Test@cb644e]" name="feature" duration-ms="13632" started-at="2019-07-08T11:20:17Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-07-08T11:20:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Login functionality tests]]>
+                <![CDATA[Email confirmation]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="writeExtentReport()[pri:0, instance:runners.LoginRunner_Test@cb644e]" name="writeExtentReport" is-config="true" duration-ms="47" started-at="2019-07-08T10:20:43Z" finished-at="2019-07-08T10:20:43Z">
+        <test-method status="PASS" signature="writeExtentReport()[pri:0, instance:runners.Email_Validation_Test@cb644e]" name="writeExtentReport" is-config="true" duration-ms="47" started-at="2019-07-08T11:20:30Z" finished-at="2019-07-08T11:20:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeExtentReport -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.LoginRunner_Test@cb644e]" name="tearDownClass" is-config="true" duration-ms="343" started-at="2019-07-08T10:20:43Z" finished-at="2019-07-08T10:20:44Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.Email_Validation_Test@cb644e]" name="tearDownClass" is-config="true" duration-ms="372" started-at="2019-07-08T11:20:30Z" finished-at="2019-07-08T11:20:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runners.LoginRunner_Test -->
+      </class> <!-- runners.Email_Validation_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
