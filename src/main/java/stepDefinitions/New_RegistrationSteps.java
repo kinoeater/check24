@@ -119,8 +119,7 @@ public class New_RegistrationSteps extends DriverFactory {
     
     @And("^User enters randomly generated email and following details for registration$")
     public void user_enters_randomly_generated_email_and_following_details_for_registration(DataTable table) throws Throwable {
-        
-    	
+         	
     	String generatedString = UUID.randomUUID().toString();
     	String RandomEmail = generatedString + "@gmail.com";
         System.out.println(generatedString);
@@ -133,6 +132,35 @@ public class New_RegistrationSteps extends DriverFactory {
         	registrationPage.sendKeysToWebElement(registrationPage.repeatingPasswordArea, list.get(i).get("repeatpassword"));   	
     	}
     }
+    
+    @Given("^User opens Email Page$")
+    public void user_opens_email_page() throws Throwable {
+    	emailPage.goToEmail();
+    	emailPage.verify_user_area();
+    }
+
+    @When("^User enters into confirmation email$")
+    public void user_enters_into_confirmation_email() throws Throwable {
+    	
+    	emailPage.enters_confirm_email();
+    	  
+    }
+
+    @Then("^User should see confirmation button and click on it$")
+    public void user_should_see_confirmation_button_and_click_on_it() throws Throwable {
+        
+    	emailPage.click_confirm_button();
+    	
+    }
+
+    @And("^User enters \"([^\"]*)\" and \"([^\"]*)\" and logs in$")
+    public void user_enters_something_and_something_and_logs_in(String strArg1, String strArg2) throws Throwable {
+    	
+    	emailPage.entersEmailandPassandlogin(strArg1, strArg2);
+    	emailPage.verify_search_message_area();
+    	
+    }
+
 }
 
 

@@ -1,28 +1,28 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/resources/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/resources/features/new_registiration.feature");
 formatter.feature({
   "line": 1,
-  "name": "Login functionality tests",
+  "name": "New user registration functionality tests",
   "description": "",
-  "id": "login-functionality-tests",
+  "id": "new-user-registration-functionality-tests",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4160952200,
+  "duration": 4057259900,
   "status": "passed"
 });
 formatter.background({
   "comments": [
     {
       "line": 2,
-      "value": "#You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
+      "value": "# You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
     },
     {
       "line": 3,
-      "value": "#Then Bonigarcia’s webdriver manager will take care of the rest"
+      "value": "# Then Bonigarcia’s webdriver manager will take care of the rest"
     }
   ],
   "line": 5,
-  "name": "User lands on check24 page, then navigates to login page",
+  "name": "User lands on check24 page, then navigates to registiration page",
   "description": "",
   "type": "background",
   "keyword": "Background"
@@ -34,140 +34,174 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "User navigates to login page",
+  "name": "User navigates to registration page",
   "keyword": "When "
 });
 formatter.step({
   "line": 9,
-  "name": "User can see login email area",
+  "name": "User can see email area",
   "keyword": "Then "
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 15784277100,
+  "duration": 10772866800,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_navigates_to_login_page()"
+  "location": "New_RegistrationSteps.user_navigates_to_registration_page()"
 });
 formatter.result({
-  "duration": 965033700,
+  "duration": 2968259700,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_can_see_login_email_area()"
+  "location": "New_RegistrationSteps.user_can_see_email_area()"
 });
 formatter.result({
-  "duration": 75321100,
+  "duration": 66228900,
   "status": "passed"
 });
 formatter.scenario({
   "line": 11,
-  "name": "Successful login with correct credentials",
+  "name": "Verify that user can successfully register with suitable credentials.",
   "description": "",
-  "id": "login-functionality-tests;successful-login-with-correct-credentials",
+  "id": "new-user-registration-functionality-tests;verify-that-user-can-successfully-register-with-suitable-credentials.",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 13,
-  "name": "User is on login page",
+  "comments": [
+    {
+      "line": 12,
+      "value": "# Used basic parameterization for password and repeated password"
+    },
+    {
+      "line": 13,
+      "value": "# If same email is used in one of the successful registrations beforehand, system will reject it if we use it second time."
+    },
+    {
+      "line": 14,
+      "value": "# To avoid this, I added a few lines that creates random e-mail addresses for registration purposes"
+    }
+  ],
+  "line": 16,
+  "name": "User is on registiration page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 14,
-  "name": "User enters following details for login",
-  "rows": [
-    {
-      "cells": [
-        "email",
-        "password"
-      ],
-      "line": 15
-    },
-    {
-      "cells": [
-        "yolmustafa@gmail.com",
-        "\u00266Mu2tafa"
-      ],
-      "line": 16
-    }
-  ],
+  "line": 17,
+  "name": "User enters a randomly generated email",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
-  "name": "User clicks on the login button",
-  "keyword": "When "
+  "line": 18,
+  "name": "User enters Password as \"9876Strong!\"",
+  "keyword": "And "
 });
 formatter.step({
-  "line": 18,
+  "line": 19,
+  "name": "User enters Repeating Password as \"9876Strong!\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "User clicks on the submit button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
   "name": "User should close popup message",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 19,
-  "name": "User should land on home page after login",
+  "line": 22,
+  "name": "User should land on home page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginSteps.user_is_on_login_page()"
+  "location": "New_RegistrationSteps.user_is_on_registiration_page()"
 });
 formatter.result({
-  "duration": 27183200,
+  "duration": 56718600,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_enters_following_details_for_login(DataTable)"
+  "location": "New_RegistrationSteps.user_enters_a_randomly_generated_email()"
 });
 formatter.result({
-  "duration": 394019000,
+  "duration": 307109300,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_clicks_on_the_login_button()"
+  "arguments": [
+    {
+      "val": "9876Strong!",
+      "offset": 25
+    }
+  ],
+  "location": "New_RegistrationSteps.user_enters_password_as_something(String)"
 });
 formatter.result({
-  "duration": 105925200,
+  "duration": 181996100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "9876Strong!",
+      "offset": 35
+    }
+  ],
+  "location": "New_RegistrationSteps.user_enters_repeating_password_as_something(String)"
+});
+formatter.result({
+  "duration": 170005800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "New_RegistrationSteps.user_clicks_on_the_submit_button()"
+});
+formatter.result({
+  "duration": 116572400,
   "status": "passed"
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_should_close_popup_message()"
 });
 formatter.result({
-  "duration": 3508926200,
+  "duration": 3511736800,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_should_land_on_home_page_after_login()"
+  "location": "New_RegistrationSteps.user_should_land_on_home_page()"
 });
 formatter.result({
-  "duration": 75403400,
+  "duration": 110437000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 876004900,
+  "duration": 953334000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3447650200,
+  "duration": 3506605600,
   "status": "passed"
 });
 formatter.background({
   "comments": [
     {
       "line": 2,
-      "value": "#You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
+      "value": "# You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
     },
     {
       "line": 3,
-      "value": "#Then Bonigarcia’s webdriver manager will take care of the rest"
+      "value": "# Then Bonigarcia’s webdriver manager will take care of the rest"
     }
   ],
   "line": 5,
-  "name": "User lands on check24 page, then navigates to login page",
+  "name": "User lands on check24 page, then navigates to registiration page",
   "description": "",
   "type": "background",
   "keyword": "Background"
@@ -179,273 +213,136 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "User navigates to login page",
+  "name": "User navigates to registration page",
   "keyword": "When "
 });
 formatter.step({
   "line": 9,
-  "name": "User can see login email area",
+  "name": "User can see email area",
   "keyword": "Then "
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 14452109300,
+  "duration": 12568144800,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_navigates_to_login_page()"
+  "location": "New_RegistrationSteps.user_navigates_to_registration_page()"
 });
 formatter.result({
-  "duration": 957874500,
+  "duration": 3172491300,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_can_see_login_email_area()"
+  "location": "New_RegistrationSteps.user_can_see_email_area()"
 });
 formatter.result({
-  "duration": 74299600,
+  "duration": 90300000,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 21,
-  "name": "Unsuccessful login with incorrect email",
+  "line": 24,
+  "name": "Verify that user can successfully verify account via an email.",
   "description": "",
-  "id": "login-functionality-tests;unsuccessful-login-with-incorrect-email",
+  "id": "new-user-registration-functionality-tests;verify-that-user-can-successfully-verify-account-via-an-email.",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 23,
-  "name": "User is on login page",
+  "comments": [
+    {
+      "line": 25,
+      "value": "# Each email confirmation requires a new instance of new email account creation"
+    },
+    {
+      "line": 26,
+      "value": "# In this scenario I only provide a validation of already registered and confirmed account"
+    },
+    {
+      "line": 27,
+      "value": "# to show how same steps can be used for the same purposes"
+    }
+  ],
+  "line": 29,
+  "name": "User opens Email Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 24,
-  "name": "User enters following details for login",
-  "rows": [
-    {
-      "cells": [
-        "email",
-        "password"
-      ],
-      "line": 25
-    },
-    {
-      "cells": [
-        "ssyyol@gmail.com",
-        "\u00266Mu2tafa"
-      ],
-      "line": 26
-    }
-  ],
+  "line": 30,
+  "name": "User enters \"check24qa\" and \"\u00266Mu2tafa\" and logs in",
   "keyword": "And "
 });
 formatter.step({
-  "line": 27,
-  "name": "User clicks on the login button",
+  "line": 31,
+  "name": "User enters into confirmation email",
   "keyword": "When "
-});
-formatter.step({
-  "line": 28,
-  "name": "User should be notified with \"E-Mail-Adresse oder Passwort ist nicht korrekt.\" on login email-pwd error",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginSteps.user_is_on_login_page()"
-});
-formatter.result({
-  "duration": 33655000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.user_enters_following_details_for_login(DataTable)"
-});
-formatter.result({
-  "duration": 512282400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.user_clicks_on_the_login_button()"
-});
-formatter.result({
-  "duration": 176308500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "E-Mail-Adresse oder Passwort ist nicht korrekt.",
-      "offset": 30
-    }
-  ],
-  "location": "LoginSteps.user_should_be_notified_with_something_on_login_emailpwd_error(String)"
-});
-formatter.result({
-  "duration": 878307100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 921220300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 3413549100,
-  "status": "passed"
-});
-formatter.background({
-  "comments": [
-    {
-      "line": 2,
-      "value": "#You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
-    },
-    {
-      "line": 3,
-      "value": "#Then Bonigarcia’s webdriver manager will take care of the rest"
-    }
-  ],
-  "line": 5,
-  "name": "User lands on check24 page, then navigates to login page",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "User opens Check24 WebPage",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "User navigates to login page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 9,
-  "name": "User can see login email area",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "New_RegistrationSteps.user_opens_check24_webpage()"
-});
-formatter.result({
-  "duration": 17096670300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.user_navigates_to_login_page()"
-});
-formatter.result({
-  "duration": 818277700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.user_can_see_login_email_area()"
-});
-formatter.result({
-  "duration": 54780400,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 30,
-  "name": "Unsuccessful login with incorrect password",
-  "description": "",
-  "id": "login-functionality-tests;unsuccessful-login-with-incorrect-password",
-  "type": "scenario",
-  "keyword": "Scenario"
 });
 formatter.step({
   "line": 32,
-  "name": "User is on login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 33,
-  "name": "User enters following details for login",
-  "rows": [
-    {
-      "cells": [
-        "email",
-        "password"
-      ],
-      "line": 34
-    },
-    {
-      "cells": [
-        "yolmustafa@gmail.com",
-        "incorrect"
-      ],
-      "line": 35
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 36,
-  "name": "User clicks on the login button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 37,
-  "name": "User should be notified with \"E-Mail-Adresse oder Passwort ist nicht korrekt.\" on login email-pwd error",
+  "name": "User should see confirmation button and click on it",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.user_is_on_login_page()"
+  "location": "New_RegistrationSteps.user_opens_email_page()"
 });
 formatter.result({
-  "duration": 48922200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.user_enters_following_details_for_login(DataTable)"
-});
-formatter.result({
-  "duration": 504323700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.user_clicks_on_the_login_button()"
-});
-formatter.result({
-  "duration": 103840100,
+  "duration": 4156982500,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "E-Mail-Adresse oder Passwort ist nicht korrekt.",
-      "offset": 30
+      "val": "check24qa",
+      "offset": 13
+    },
+    {
+      "val": "\u00266Mu2tafa",
+      "offset": 29
     }
   ],
-  "location": "LoginSteps.user_should_be_notified_with_something_on_login_emailpwd_error(String)"
+  "location": "New_RegistrationSteps.user_enters_something_and_something_and_logs_in(String,String)"
 });
 formatter.result({
-  "duration": 802240600,
+  "duration": 3414301400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "New_RegistrationSteps.user_enters_into_confirmation_email()"
+});
+formatter.result({
+  "duration": 697124100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "New_RegistrationSteps.user_should_see_confirmation_button_and_click_on_it()"
+});
+formatter.result({
+  "duration": 1348508700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 968238200,
+  "duration": 693194000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3495598800,
+  "duration": 3541534000,
   "status": "passed"
 });
 formatter.background({
   "comments": [
     {
       "line": 2,
-      "value": "#You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
+      "value": "# You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
     },
     {
       "line": 3,
-      "value": "#Then Bonigarcia’s webdriver manager will take care of the rest"
+      "value": "# Then Bonigarcia’s webdriver manager will take care of the rest"
     }
   ],
   "line": 5,
-  "name": "User lands on check24 page, then navigates to login page",
+  "name": "User lands on check24 page, then navigates to registiration page",
   "description": "",
   "type": "background",
   "keyword": "Background"
@@ -457,134 +354,140 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "User navigates to login page",
+  "name": "User navigates to registration page",
   "keyword": "When "
 });
 formatter.step({
   "line": 9,
-  "name": "User can see login email area",
+  "name": "User can see email area",
   "keyword": "Then "
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 16977336800,
+  "duration": 12669507700,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_navigates_to_login_page()"
+  "location": "New_RegistrationSteps.user_navigates_to_registration_page()"
 });
 formatter.result({
-  "duration": 1081910500,
+  "duration": 2845329100,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_can_see_login_email_area()"
+  "location": "New_RegistrationSteps.user_can_see_email_area()"
 });
 formatter.result({
-  "duration": 80051100,
+  "duration": 74839100,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 39,
-  "name": "Unsuccessful login with empty email",
+  "line": 34,
+  "name": "Verify that user cannot register when entering very short password.",
   "description": "",
-  "id": "login-functionality-tests;unsuccessful-login-with-empty-email",
+  "id": "new-user-registration-functionality-tests;verify-that-user-cannot-register-when-entering-very-short-password.",
   "type": "scenario",
   "keyword": "Scenario"
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 35,
+      "value": "# Again, I used random e-mail address for the sake of the test case"
+    }
+  ],
+  "line": 37,
+  "name": "User is on registiration page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 38,
+  "name": "User enters randomly generated email and following details for registration",
+  "rows": [
+    {
+      "cells": [
+        "password",
+        "repeatpassword"
+      ],
+      "line": 39
+    },
+    {
+      "cells": [
+        "12",
+        "12"
+      ],
+      "line": 40
+    }
+  ],
+  "keyword": "And "
 });
 formatter.step({
   "line": 41,
-  "name": "User is on login page",
-  "keyword": "Given "
+  "name": "User clicks on the submit button",
+  "keyword": "When "
 });
 formatter.step({
   "line": 42,
-  "name": "User enters following details for login",
-  "rows": [
-    {
-      "cells": [
-        "email",
-        "password"
-      ],
-      "line": 43
-    },
-    {
-      "cells": [
-        "",
-        "\u00266Mu2tafa"
-      ],
-      "line": 44
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 45,
-  "name": "User clicks on the login button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 46,
-  "name": "User should be notified with \"Bitte geben Sie Ihre E-Mail-Adresse an\" on login email error",
+  "name": "User should be notified with \"Das Passwort sollte zwischen 6 und 50 Zeichen lang sein.\" on password error",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.user_is_on_login_page()"
+  "location": "New_RegistrationSteps.user_is_on_registiration_page()"
 });
 formatter.result({
-  "duration": 29265000,
+  "duration": 62638300,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_enters_following_details_for_login(DataTable)"
+  "location": "New_RegistrationSteps.user_enters_randomly_generated_email_and_following_details_for_registration(DataTable)"
 });
 formatter.result({
-  "duration": 447506400,
+  "duration": 533382400,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_clicks_on_the_login_button()"
+  "location": "New_RegistrationSteps.user_clicks_on_the_submit_button()"
 });
 formatter.result({
-  "duration": 244229900,
+  "duration": 105939400,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Bitte geben Sie Ihre E-Mail-Adresse an",
+      "val": "Das Passwort sollte zwischen 6 und 50 Zeichen lang sein.",
       "offset": 30
     }
   ],
-  "location": "LoginSteps.user_should_be_notified_with_something_on_login_email_error(String)"
+  "location": "New_RegistrationSteps.user_should_be_notified_with_something_on_password_error(String)"
 });
 formatter.result({
-  "duration": 811045900,
+  "duration": 1231472200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 888042400,
+  "duration": 872926800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3480331900,
+  "duration": 3496885300,
   "status": "passed"
 });
 formatter.background({
   "comments": [
     {
       "line": 2,
-      "value": "#You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
+      "value": "# You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
     },
     {
       "line": 3,
-      "value": "#Then Bonigarcia’s webdriver manager will take care of the rest"
+      "value": "# Then Bonigarcia’s webdriver manager will take care of the rest"
     }
   ],
   "line": 5,
-  "name": "User lands on check24 page, then navigates to login page",
+  "name": "User lands on check24 page, then navigates to registiration page",
   "description": "",
   "type": "background",
   "keyword": "Background"
@@ -596,134 +499,140 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "User navigates to login page",
+  "name": "User navigates to registration page",
   "keyword": "When "
 });
 formatter.step({
   "line": 9,
-  "name": "User can see login email area",
+  "name": "User can see email area",
   "keyword": "Then "
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 16022116800,
+  "duration": 11679168200,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_navigates_to_login_page()"
+  "location": "New_RegistrationSteps.user_navigates_to_registration_page()"
 });
 formatter.result({
-  "duration": 1132214000,
+  "duration": 2954552600,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_can_see_login_email_area()"
+  "location": "New_RegistrationSteps.user_can_see_email_area()"
 });
 formatter.result({
-  "duration": 34801800,
+  "duration": 127518300,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 48,
-  "name": "Unsuccessful login with empty password",
+  "line": 44,
+  "name": "Verify that user cannot register when password and repeating password do not match.",
   "description": "",
-  "id": "login-functionality-tests;unsuccessful-login-with-empty-password",
+  "id": "new-user-registration-functionality-tests;verify-that-user-cannot-register-when-password-and-repeating-password-do-not-match.",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 50,
-  "name": "User is on login page",
+  "comments": [
+    {
+      "line": 45,
+      "value": "# Random e-mail address"
+    }
+  ],
+  "line": 47,
+  "name": "User is on registiration page",
   "keyword": "Given "
+});
+formatter.step({
+  "line": 48,
+  "name": "User enters randomly generated email and following details for registration",
+  "rows": [
+    {
+      "cells": [
+        "password",
+        "repeatpassword"
+      ],
+      "line": 49
+    },
+    {
+      "cells": [
+        "1234pwdee",
+        "pwd345455"
+      ],
+      "line": 50
+    }
+  ],
+  "keyword": "And "
 });
 formatter.step({
   "line": 51,
-  "name": "User enters following details for login",
-  "rows": [
-    {
-      "cells": [
-        "email",
-        "password"
-      ],
-      "line": 52
-    },
-    {
-      "cells": [
-        "yolmustafa@gmail.com",
-        ""
-      ],
-      "line": 53
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 54,
-  "name": "User clicks on the login button",
+  "name": "User clicks on the submit button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 55,
-  "name": "User should be notified with \"Bitte geben Sie Ihr Passwort an.\" on empty password error",
+  "line": 52,
+  "name": "User should be notified with \"Die Passwörter stimmen nicht überein.\" on password error",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.user_is_on_login_page()"
+  "location": "New_RegistrationSteps.user_is_on_registiration_page()"
 });
 formatter.result({
-  "duration": 42431000,
+  "duration": 29346500,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_enters_following_details_for_login(DataTable)"
+  "location": "New_RegistrationSteps.user_enters_randomly_generated_email_and_following_details_for_registration(DataTable)"
 });
 formatter.result({
-  "duration": 469726200,
+  "duration": 728201700,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_clicks_on_the_login_button()"
+  "location": "New_RegistrationSteps.user_clicks_on_the_submit_button()"
 });
 formatter.result({
-  "duration": 168753400,
+  "duration": 213663700,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Bitte geben Sie Ihr Passwort an.",
+      "val": "Die Passwörter stimmen nicht überein.",
       "offset": 30
     }
   ],
-  "location": "LoginSteps.user_should_be_notified_with_something_on_empty_password_error(String)"
+  "location": "New_RegistrationSteps.user_should_be_notified_with_something_on_password_error(String)"
 });
 formatter.result({
-  "duration": 789141900,
+  "duration": 1119278300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 845122700,
+  "duration": 883024000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3529977400,
+  "duration": 3486908900,
   "status": "passed"
 });
 formatter.background({
   "comments": [
     {
       "line": 2,
-      "value": "#You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
+      "value": "# You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
     },
     {
       "line": 3,
-      "value": "#Then Bonigarcia’s webdriver manager will take care of the rest"
+      "value": "# Then Bonigarcia’s webdriver manager will take care of the rest"
     }
   ],
   "line": 5,
-  "name": "User lands on check24 page, then navigates to login page",
+  "name": "User lands on check24 page, then navigates to registiration page",
   "description": "",
   "type": "background",
   "keyword": "Background"
@@ -735,133 +644,123 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "User navigates to login page",
+  "name": "User navigates to registration page",
   "keyword": "When "
 });
 formatter.step({
   "line": 9,
-  "name": "User can see login email area",
+  "name": "User can see email area",
   "keyword": "Then "
 });
 formatter.match({
   "location": "New_RegistrationSteps.user_opens_check24_webpage()"
 });
 formatter.result({
-  "duration": 16077533800,
+  "duration": 13601386400,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_navigates_to_login_page()"
+  "location": "New_RegistrationSteps.user_navigates_to_registration_page()"
 });
 formatter.result({
-  "duration": 816042500,
+  "duration": 2863733500,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_can_see_login_email_area()"
+  "location": "New_RegistrationSteps.user_can_see_email_area()"
 });
 formatter.result({
-  "duration": 40085200,
+  "duration": 129444600,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 57,
-  "name": "Unsuccessful login with empty email and empty password",
+  "line": 54,
+  "name": "Verify that user cannot register when trying to use an invalid e-mail format.",
   "description": "",
-  "id": "login-functionality-tests;unsuccessful-login-with-empty-email-and-empty-password",
+  "id": "new-user-registration-functionality-tests;verify-that-user-cannot-register-when-trying-to-use-an-invalid-e-mail-format.",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 59,
-  "name": "User is on login page",
+  "comments": [
+    {
+      "line": 55,
+      "value": "# E-mail address without @ sign"
+    }
+  ],
+  "line": 57,
+  "name": "User is on registiration page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 60,
-  "name": "User enters following details for login",
+  "line": 58,
+  "name": "User enters following details for registration",
   "rows": [
     {
       "cells": [
         "email",
-        "password"
+        "password",
+        "repeatpassword"
       ],
-      "line": 61
+      "line": 59
     },
     {
       "cells": [
-        "",
-        ""
+        "noatsignail3.com",
+        "1234pwd",
+        "1234pwd"
       ],
-      "line": 62
+      "line": 60
     }
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 63,
-  "name": "User clicks on the login button",
+  "line": 61,
+  "name": "User clicks on the submit button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 64,
-  "name": "User should be notified with \"Bitte geben Sie Ihre E-Mail-Adresse an\" on login email error",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 65,
-  "name": "User should be notified with \"Bitte geben Sie Ihr Passwort an.\" on empty password error",
+  "line": 62,
+  "name": "User should be notified with \"Bitte geben Sie eine gültige E-Mail-Adresse an.\" on email error",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.user_is_on_login_page()"
+  "location": "New_RegistrationSteps.user_is_on_registiration_page()"
 });
 formatter.result({
-  "duration": 73788800,
+  "duration": 45451600,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_enters_following_details_for_login(DataTable)"
+  "location": "New_RegistrationSteps.user_enters_following_details_for_registration(DataTable)"
 });
 formatter.result({
-  "duration": 299911200,
+  "duration": 653002200,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_clicks_on_the_login_button()"
+  "location": "New_RegistrationSteps.user_clicks_on_the_submit_button()"
 });
 formatter.result({
-  "duration": 106567900,
+  "duration": 127543200,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Bitte geben Sie Ihre E-Mail-Adresse an",
+      "val": "Bitte geben Sie eine gültige E-Mail-Adresse an.",
       "offset": 30
     }
   ],
-  "location": "LoginSteps.user_should_be_notified_with_something_on_login_email_error(String)"
+  "location": "New_RegistrationSteps.user_should_be_notified_with_something_on_email_error(String)"
 });
 formatter.result({
-  "duration": 831036300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Bitte geben Sie Ihr Passwort an.",
-      "offset": 30
-    }
-  ],
-  "location": "LoginSteps.user_should_be_notified_with_something_on_empty_password_error(String)"
-});
-formatter.result({
-  "duration": 210925800,
+  "duration": 806279300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 924260600,
+  "duration": 884273700,
   "status": "passed"
 });
 });

@@ -9,6 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 
+import pageObjects.Email_Page;
 import pageObjects.Home_Page;
 import pageObjects.Landing_Page;
 import pageObjects.Login_Page;
@@ -26,6 +27,8 @@ public class DriverFactory {
 	public static Login_Page loginPage;
 	public static Search_Page searchPage;
 	public static Travel_Page travelPage;
+	public static Email_Page emailPage;
+	
 
 	
 	public WebDriver getDriver() {
@@ -71,6 +74,7 @@ public class DriverFactory {
 			loginPage = PageFactory.initElements(driver, Login_Page.class);
 			searchPage = PageFactory.initElements(driver, Search_Page.class);
 			travelPage = PageFactory.initElements(driver, Travel_Page.class);
+			emailPage = PageFactory.initElements(driver, Email_Page.class);
 			
 		}
 		return driver;
