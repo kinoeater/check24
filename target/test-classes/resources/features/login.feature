@@ -12,8 +12,8 @@ Feature: Login functionality tests
   
     Given User is on login page
       And User enters following details for login
-      | email                | password  | 
-      | yolmustafa@gmail.com | &6Mu2tafa | 
+      | email               | password  | 
+      | kinoeater@gmail.com | &6Mu2tafa | 
      When User clicks on the login button
      Then User should close popup message
       And User should land on home page after login

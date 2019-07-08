@@ -157,7 +157,7 @@ public class BasePage extends DriverFactory {
 
   screenshotName = returnDateStamp(".jpg");
 
-  FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir") + "\\output\\imgs\\" + screenshotName));
+  FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir") +File.separator+"output"+File.separator+"imgs"+File.separator+ screenshotName));
 
   Reporter.addStepLog("Taking a screenshot!");
   Reporter.addStepLog("<br>");
@@ -165,7 +165,7 @@ public class BasePage extends DriverFactory {
  }
 
  public static String returnScreenshotName() {
-  return (System.getProperty("user.dir") + "\\output\\imgs\\" + screenshotName).toString();
+  return (System.getProperty("user.dir") +File.separator+"output"+File.separator+"imgs"+File.separator+ screenshotName).toString();
  }
 
  private static void copyFileUsingStream(File source, File dest) throws IOException {
@@ -191,8 +191,8 @@ public class BasePage extends DriverFactory {
  public static void copyLatestExtentReport() throws IOException {
   Date d = new Date();
   String date = d.toString().replace(":", "_").replace(" ", "_");
-  File source = new File(System.getProperty("user.dir") + "\\output\\report.html");
-  File dest = new File(System.getProperty("user.dir") + "\\output\\" + date.toString() + ".html");
+  File source = new File(System.getProperty("user.dir") +File.separator+"output"+File.separator+"report.html");
+  File dest = new File(System.getProperty("user.dir") +File.separator+"output"+File.separator+ date.toString() + ".html");
   copyFileUsingStream(source, dest);
  }
 }
