@@ -18,7 +18,7 @@ import pageObjects.BasePage;
 				plugin = { "pretty", "html:target/cucumber", "json:target/cucumber.json",
 				"com.cucumber.listener.ExtentCucumberFormatter:output/report.html" })
 
-public class Email_Validation_Test extends AbstractTestNGCucumberTests {
+public class New_Registration_Email_Validation_Test extends AbstractTestNGCucumberTests {
 	@AfterClass
 	public static void writeExtentReport() throws IOException {
 		Reporter.loadXMLConfig(new File(System.getProperty("user.dir") + File.separator +"src"+ File.separator +"main"+ File.separator +"java"+ File.separator +"utils"+ File.separator +"ReportsConfig.xml"));

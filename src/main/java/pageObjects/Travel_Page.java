@@ -108,7 +108,7 @@ public class Travel_Page extends BasePage{
     	
 	}
 	
-public Travel_Page enterTravelOptions() throws Exception {
+	public Travel_Page enterTravelOptions() throws Exception {
      	
 		waitAndClickElement(travelPage.traveler_options);
 		waitAndClickElement(travelPage.traveler_options_one_adault);   			
@@ -117,11 +117,11 @@ public Travel_Page enterTravelOptions() throws Exception {
 	}
 
 	
-public Travel_Page verify_landed_search_results() throws Exception {
+	public Travel_Page verify_landed_search_results() throws Exception {
 
-	WaitUntilWebElementIsVisible(flugHotel);
-	return new Travel_Page();
-}
+		WaitUntilWebElementIsVisible(flugHotel);
+		return new Travel_Page();
+	}
 
 	
 	public Travel_Page verify_destination_area() throws Exception {

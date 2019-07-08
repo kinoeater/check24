@@ -51,7 +51,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 8, 2019 11:20:17 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 8, 2019 11:37:02 AM</span>
 				</a>
 			</li>
 			<li>
@@ -127,7 +127,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -142,7 +142,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>13</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -157,7 +157,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>105</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -177,18 +177,107 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Email confirmation</span>
-						<span class='test-time'>Jul 8, 2019 11:20:17 AM</span>
+						<span class='test-time'>Jul 8, 2019 11:37:02 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 12s+762ms</span>
+	<span class='duration right label'>0h 1m 6s+570ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify that user can successfully register with suitable credentials.</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='3' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Check24 WebPage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='4' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User navigates to registration page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='5' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User can see email area</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='6' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on registiration page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='7' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters a randomly generated email</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='8' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters Password as "9876Strong!"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='9' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters Repeating Password as "9876Strong!"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='10' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on the submit button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='11' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should close popup message</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='12' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should land on home page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='13' status='pass'>
+	<span class='duration right label'>0h 0m 19s+712ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify that user can successfully verify account via an email.</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node given pass' status='pass'>
+		<li test-id='14' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -196,7 +285,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='4' class='node and pass' status='pass'>
+		<li test-id='15' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -204,7 +293,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='5' class='node when pass' status='pass'>
+		<li test-id='16' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -212,11 +301,881 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='6' class='node then pass' status='pass'>
+		<li test-id='17' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then User should see confirmation button and click on it</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>Login functionality tests</span>
+						<span class='test-time'>Jul 8, 2019 11:38:30 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='19' status='pass'>
+	<span class='duration right label'>0h 0m 51s+310ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Successful login with correct credentials</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='20' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Check24 WebPage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='21' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User navigates to login page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='22' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User can see login email area</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='23' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on login page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='24' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters following details for login</span>
+				<div class='pre'><table><tr><td>email</td><td>password</td></tr><tr><td>kinoeater@gmail.com</td><td>&6Mu2tafa</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='25' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on the login button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='26' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should close popup message</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='27' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should land on home page after login</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='28' status='pass'>
+	<span class='duration right label'>0h 1m 39s+894ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Unsuccessful login with incorrect email</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='29' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Check24 WebPage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='30' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User navigates to login page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='31' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User can see login email area</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='32' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on login page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='33' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters following details for login</span>
+				<div class='pre'><table><tr><td>email</td><td>password</td></tr><tr><td>ssyyol@gmail.com</td><td>&6Mu2tafa</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='34' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on the login button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='35' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be notified with "E-Mail-Adresse oder Passwort ist nicht korrekt." on login email-pwd error</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='36' status='pass'>
+	<span class='duration right label'>0h 1m 21s+911ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Unsuccessful login with incorrect password</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='37' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Check24 WebPage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='38' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User navigates to login page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='39' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User can see login email area</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='40' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on login page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='41' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters following details for login</span>
+				<div class='pre'><table><tr><td>email</td><td>password</td></tr><tr><td>yolmustafa@gmail.com</td><td>incorrect</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='42' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on the login button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='43' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be notified with "E-Mail-Adresse oder Passwort ist nicht korrekt." on login email-pwd error</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='44' status='pass'>
+	<span class='duration right label'>0h 0m 20s+3ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Unsuccessful login with empty email</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='45' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Check24 WebPage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='46' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User navigates to login page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='47' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User can see login email area</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='48' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on login page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='49' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters following details for login</span>
+				<div class='pre'><table><tr><td>email</td><td>password</td></tr><tr><td></td><td>&6Mu2tafa</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='50' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on the login button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='51' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be notified with "Bitte geben Sie Ihre E-Mail-Adresse an" on login email error</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='52' status='pass'>
+	<span class='duration right label'>0h 0m 57s+924ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Unsuccessful login with empty password</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='53' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Check24 WebPage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='54' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User navigates to login page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='55' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User can see login email area</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='56' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on login page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='57' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters following details for login</span>
+				<div class='pre'><table><tr><td>email</td><td>password</td></tr><tr><td>yolmustafa@gmail.com</td><td></td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='58' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on the login button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='59' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be notified with "Bitte geben Sie Ihr Passwort an." on empty password error</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='60' status='pass'>
+	<span class='duration right label'>0h 0m 18s+102ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Unsuccessful login with empty email and empty password</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='61' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Check24 WebPage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='62' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User navigates to login page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='63' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User can see login email area</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='64' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on login page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='65' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters following details for login</span>
+				<div class='pre'><table><tr><td>email</td><td>password</td></tr><tr><td></td><td></td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='66' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on the login button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='67' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be notified with "Bitte geben Sie Ihre E-Mail-Adresse an" on login email error</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='68' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be notified with "Bitte geben Sie Ihr Passwort an." on empty password error</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='69'>
+					<div class='test-heading'>
+						<span class='test-name'>New user registration functionality tests</span>
+						<span class='test-time'>Jul 8, 2019 11:44:05 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='70' status='pass'>
+	<span class='duration right label'>0h 0m 57s+104ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify that user can successfully register with suitable credentials.</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='71' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Check24 WebPage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='72' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User navigates to registration page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='73' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User can see email area</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='74' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on registiration page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='75' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters a randomly generated email</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='76' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters Password as "9876Strong!"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='77' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters Repeating Password as "9876Strong!"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='78' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on the submit button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='79' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should close popup message</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='80' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should land on home page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='81' status='pass'>
+	<span class='duration right label'>0h 0m 30s+99ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify that user cannot register when entering very short password.</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='82' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Check24 WebPage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='83' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User navigates to registration page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='84' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User can see email area</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='85' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on registiration page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='86' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters randomly generated email and following details for registration</span>
+				<div class='pre'><table><tr><td>password</td><td>repeatpassword</td></tr><tr><td>12</td><td>12</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='87' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on the submit button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='88' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be notified with "Das Passwort sollte zwischen 6 und 50 Zeichen lang sein." on password error</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='89' status='pass'>
+	<span class='duration right label'>0h 0m 20s+617ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify that user cannot register when password and repeating password do not match.</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='90' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Check24 WebPage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='91' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User navigates to registration page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='92' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User can see email area</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='93' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on registiration page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='94' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters randomly generated email and following details for registration</span>
+				<div class='pre'><table><tr><td>password</td><td>repeatpassword</td></tr><tr><td>1234pwdee</td><td>pwd345455</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='95' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on the submit button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='96' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be notified with "Die Passwörter stimmen nicht überein." on password error</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='97' status='pass'>
+	<span class='duration right label'>0h 0m 55s+450ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify that user cannot register when trying to use an invalid e-mail format.</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='98' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Check24 WebPage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='99' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User navigates to registration page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='100' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User can see email area</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='101' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on registiration page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='102' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters following details for registration</span>
+				<div class='pre'><table><tr><td>email</td><td>password</td><td>repeatpassword</td></tr><tr><td>noatsignail3.com</td><td>1234pwd</td><td>1234pwd</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='103' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on the submit button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='104' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be notified with "Bitte geben Sie eine gültige E-Mail-Adresse an." on email error</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='105'>
+					<div class='test-heading'>
+						<span class='test-name'>Travel Search functionality tests</span>
+						<span class='test-time'>Jul 8, 2019 11:46:51 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='106' status='pass'>
+	<span class='duration right label'>0h 1m 30s+379ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Search a destination for having some good time</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='107' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Check24 WebPage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='108' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User navigates to login page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='109' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User can see login email area</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='110' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User is on login page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='111' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters following details for login</span>
+				<div class='pre'><table><tr><td>email</td><td>password</td></tr><tr><td>testworld@gmail.com</td><td>&6Mu2tafa</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='112' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on the login button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='113' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User should close popup message</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='114' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should land on home page after login</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='115' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User should land on travel page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='116' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters duration as "10" days</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='117' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters arrival date as "10.09.2019"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='118' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters return date as "19.09.2019"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='119' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters destination as "Side & Alanya"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='120' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters airport as "stutt"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='121' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on the find a trip button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='122' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User is presented at least one search result</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -259,37 +1218,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
-				</div>
-			</div>
-			<div class='col s2'>
-				<div class='card-panel r'>
-					Scenarios
-					<div class='panel-lead'>1</div>
-				</div>
-			</div>
-			<div class='col s2'>
-				<div class='card-panel r'>
-					Steps
 					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>13</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>105</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 8, 2019 11:20:17 AM</div>
+					<div class='panel-lead'>Jul 8, 2019 11:37:02 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 8, 2019 11:20:30 AM</div>
+			 		<div class='panel-lead'>Jul 8, 2019 11:48:23 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>13,679ms</div>
+					<div class='panel-lead'>680,570ms</div>
 				</div>
 			</div>
 		</div>
@@ -302,7 +1261,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
+				passParent: 4,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -310,7 +1269,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 1,
+				passChild: 13,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -319,7 +1278,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 4,
+				passGrandChild: 105,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
