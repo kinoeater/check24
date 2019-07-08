@@ -21,7 +21,7 @@ import pageObjects.BasePage;
 public class MainRunner_Test extends AbstractTestNGCucumberTests {
 	@AfterClass
 	public static void writeExtentReport() throws IOException {
-		Reporter.loadXMLConfig(new File(System.getProperty("user.dir") + "\\src\\main\\java\\utils\\ReportsConfig.xml"));
+		Reporter.loadXMLConfig(new File(System.getProperty("user.dir") + File.separator +"src"+ File.separator +"main"+ File.separator +"java"+ File.separator +"utils"+ File.separator +"ReportsConfig.xml"));
 		BasePage.copyLatestExtentReport();
 	}
 }

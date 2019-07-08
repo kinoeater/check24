@@ -1,5 +1,6 @@
 package utils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -35,7 +36,7 @@ public class DriverFactory {
 		try {
 			// Read Configuration
 			Properties p = new Properties();
-			FileInputStream fi = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\properties\\config.properties");
+			FileInputStream fi = new FileInputStream(System.getProperty("user.dir") +File.separator+"src"+File.separator+"main"+File.separator+"java"+File.separator+"properties"+File.separator+"config.properties");
 			p.load(fi);
 			String browserName = p.getProperty("browser");
 

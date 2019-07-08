@@ -1,5 +1,6 @@
 package utils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -27,7 +28,7 @@ public class ReadConfigFile {
 	
 	public String readPropertiesFileForCMD(String term) throws IOException {
 		Properties p = new Properties();
-		FileInputStream fi = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\properties\\config.properties");
+		FileInputStream fi = new FileInputStream(System.getProperty("user.dir") +File.separator+"src"+File.separator+"main"+File.separator+"java"+File.separator+"properties"+File.separator+"config.properties");
 		p.load(fi);
 		return p.getProperty(term.toLowerCase());
 	}
