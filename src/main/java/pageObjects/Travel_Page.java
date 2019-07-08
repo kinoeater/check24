@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
@@ -51,7 +52,7 @@ public class Travel_Page extends BasePage{
 	@FindBy(how = How.XPATH, using = "//ul[@id='ui-id-3']")                                
     public WebElement stuttgart;
 	
-	@FindBy(how = How.PARTIAL_LINK_TEXT, using = "Alanya, Side & Alanya, Türkei")
+	@FindBy(how = How.PARTIAL_LINK_TEXT, using = "Side & Alanya, Türkei")
     public WebElement alanya;
 	
 	
@@ -93,9 +94,10 @@ public class Travel_Page extends BasePage{
 	
 	public Travel_Page enterDestination(String travel_destination) throws Exception {
 		
+	
 		destination.clear();
-		destination.sendKeys(travel_destination,Keys.ENTER);
- 		getDriver().findElements(By.xpath("//li")).get(3).click();
+		destination.sendKeys(travel_destination);
+		actionMoveAndClick(alanya);
 		return new Travel_Page();
 	}
 	
@@ -115,8 +117,14 @@ public Travel_Page enterTravelOptions() throws Exception {
     	return new Travel_Page();
     	
 	}
+
 	
-	
+public Travel_Page verify_landed_search_results() throws Exception {
+
+	WaitUntilWebElementIsVisible(flugHotel);
+	return new Travel_Page();
+}
+
 	
 	public Travel_Page verify_destination_area() throws Exception {
 

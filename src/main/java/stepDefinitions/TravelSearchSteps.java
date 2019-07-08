@@ -74,6 +74,7 @@ public class TravelSearchSteps extends DriverFactory {
     public void user_is_presented_at_least_one_search_result() throws Throwable {
     	
     	travelPage.WaitUntilWebElementIsVisible(travelPage.flugHotel);
+    	travelPage.WaitUntilWebElementIsVisible(travelPage.travel_number);
     	travelPage.travel_number.getText();
     	int result = Integer.parseInt(travelPage.travel_number.getText());
    	    System.out.println("travel_count is "+result);
