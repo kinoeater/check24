@@ -45,22 +45,24 @@ public class DriverFactory {
 			case "firefox":
 				// code
 				if (null == driver) {
-					
+			
 					WebDriverManager.firefoxdriver().setup();
 					DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 					capabilities.setCapability("marionette", true);
 					driver = new FirefoxDriver();
 					driver.manage().window().maximize();
+					
 				}
 				break;
 
 			case "chrome":
 				// code
 				if (null == driver) {
+					
 					WebDriverManager.chromedriver().setup();
-					// CHROME OPTIONS
 					driver = new ChromeDriver();
 					driver.manage().window().maximize();
+					
 				}
 				break;
 
@@ -68,6 +70,7 @@ public class DriverFactory {
 		} catch (Exception e) {
 			System.out.println("Unable to load browser: " + e.getMessage());
 		} finally {
+			
 			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 			homePage = PageFactory.initElements(driver, Home_Page.class);
 			registrationPage = PageFactory.initElements(driver, Registration_Page.class);

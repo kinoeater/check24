@@ -17,19 +17,20 @@ public class MasterHooks extends DriverFactory {
 	public void tearDownAndScreenshotOnFailure(Scenario scenario) {
 		try {
 			if(driver != null && scenario.isFailed()) {
-				//scenario.embed(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES), "image/png");
+				
 				BasePage.captureScreenshot();
 				driver.manage().deleteAllCookies();
 				driver.quit();
 				driver = null;
 			}
 			if(driver != null) {
+				
 				driver.manage().deleteAllCookies();
 				driver.quit();
 				driver = null;
 			}
 		} catch (Exception e) {
-			System.out.println("Methods failed: tearDownAndScreenshotOnFailure, Exception: " + e.getMessage());
+			System.out.println("Methods failed, Exception: " + e.getMessage());
 		}
 }
 }

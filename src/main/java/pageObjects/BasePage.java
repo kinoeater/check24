@@ -146,27 +146,27 @@ public class BasePage extends DriverFactory {
  /**********************************************************************************/
 
  /***Methods those are related with Reporting****************************************************************/
- public static String returnDateStamp(String fileExtension) {
+ public static String returnDateStamp(String fileExtension) {     		// helps to get the current time stamp, then turns it into string
   Date d = new Date();
   String date = d.toString().replace(":", "_").replace(" ", "_") + fileExtension;
   return date;
  }
 
  public static void captureScreenshot() throws IOException, InterruptedException {
-  File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+  File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);     // Captures screenshot on "srcfile"
 
-  screenshotName = returnDateStamp(".jpg");
+  screenshotName = returnDateStamp(".jpg");   //creates the name for the screenshoot, with above created time stamp
 
   FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir") +File.separator+"output"+File.separator+"imgs"+File.separator+ screenshotName));
-
-  Reporter.addStepLog("Taking a screenshot!");
-  Reporter.addStepLog("<br>");
+// gives the screenshoot name, to srcFile, now screenshot has a name 
+  Reporter.addStepLog("Taking a screenshot!");  // this parts are for the html part
+  Reporter.addStepLog("<br>");  // a bracket, space
   Reporter.addStepLog("<a target=\"_blank\", href=" + returnScreenshotName() + "><img src=" + returnScreenshotName() + " height=200 width=300></img></a>");
- }
+ } // a tag for providing a link to the screenshot, so that screnshoot is embeeded to the html report
 
  public static String returnScreenshotName() {
   return (System.getProperty("user.dir") +File.separator+"output"+File.separator+"imgs"+File.separator+ screenshotName).toString();
- }
+ }  // screen shoot with the whole directory
 
  private static void copyFileUsingStream(File source, File dest) throws IOException {
   InputStream is = null;
@@ -188,7 +188,7 @@ public class BasePage extends DriverFactory {
   }
  }
 
- public static void copyLatestExtentReport() throws IOException {
+ public static void copyLatestExtentReport() throws IOException {  // takes the latest report an give it a name with the current date
   Date d = new Date();
   String date = d.toString().replace(":", "_").replace(" ", "_");
   File source = new File(System.getProperty("user.dir") +File.separator+"output"+File.separator+"report.html");
