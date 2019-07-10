@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Map;
 import org.testng.Assert;
 
+import com.cucumber.listener.Reporter;
+
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -36,6 +38,7 @@ public class LoginSteps extends DriverFactory {
 	    @And("^User enters following details for login$")
 	    public void user_enters_following_details_for_login(DataTable table) throws Throwable {
 	       
+	    	Reporter.addStepLog("Entering the credentials!");
 	    	List<Map<String, String>> list = table.asMaps(String.class, String.class);
 	    	for(int i=0; i<list.size(); i++) {
 	    		
