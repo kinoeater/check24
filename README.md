@@ -56,7 +56,7 @@ a) Verify that user can successfully login with correct credentials, then naviga
  
 ## RUNNING THE TESTS
  
- ###1. By directly using runner class
+ ### 1. By directly using runner class
 
 a) You should open / choose one of the runner classes under 
    /check_24_Framework/src/test/java/runners
