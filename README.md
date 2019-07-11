@@ -1,6 +1,6 @@
 # check24 
 
-# Similar information with pictures can also be reached on QA_task_READ_ME_1.PNG and QA_task_READ_ME_2.PNG files under root directory.
+### Similar information with pictures can also be reached on QA_task_READ_ME_1.PNG and QA_task_READ_ME_2.PNG files under root directory.
 
 TEST CASES  
 
